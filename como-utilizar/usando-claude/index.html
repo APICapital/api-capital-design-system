@@ -8,15 +8,18 @@
 <link rel="stylesheet" href="/tokens/api-capital.css">
 <link rel="stylesheet" href="/docs.css">
 <style>
-.secao p,.secao li{font-size:17px;line-height:1.6;color:var(--api-texto);max-width:72ch;}
-.secao ol{padding-left:22px;margin:0 0 24px;max-width:72ch;}
-.secao li{margin-bottom:12px;}
 .secao a{color:var(--api-acao-secundaria);}
-.botao{display:inline-block;margin-top:16px;text-decoration:none;
+.botao{display:inline-block;margin:8px 0 8px;text-decoration:none;
        background:var(--api-acao);color:var(--api-sobre-escuro) !important;
        padding:14px 28px;border-radius:var(--api-canto);
        font-family:var(--api-corpo-font-family);font-weight:600;}
 .botao:hover{background:var(--api-acao-hover);}
+.passo{margin:56px 0 0;}
+.passo h3{margin:0 0 12px;}
+.print{display:block;width:100%;height:auto;border:1px solid var(--api-borda);
+       border-radius:var(--api-canto);margin:20px 0 8px;}
+.pedido{font-family:var(--api-subtitulo-font-family);font-size:20px;color:var(--api-azul);
+        margin:0 0 8px;max-width:60ch;}
 </style>
 </head>
 <body>
@@ -35,27 +38,96 @@
   <main class="conteudo secao">
     <div class="subcabecalho">
       <h1>Usando Claude</h1>
-      <p class="linhafina">Instale a skill uma vez e produza peças no padrão da API Capital em
-        qualquer conversa com o Claude.</p>
+      <p class="linhafina">Instale a skill uma vez e peça, em qualquer conversa com o Claude, peças
+        no padrão da API Capital.</p>
       <hr class="fio">
     </div>
 
-    <p>Instale uma vez e peça as peças em português, todo dia, em qualquer conversa:
-      <em>“faz uma proposta comercial com a cara da API Capital”</em>.</p>
-    <ol>
-      <li>Baixe a skill no botão abaixo.</li>
-      <li>No Claude, abra <strong>Configurações → Personalizar → Habilidades</strong>, clique em
-          <strong>Adicionar → Fazer upload de habilidade</strong> e suba o arquivo <code>.zip</code> ou
-          <code>.skill</code> que foi baixado. Se a opção não aparecer, ligue <strong>execução de código</strong> na
-        mesma tela. Já tinha uma versão instalada? Apague a antiga antes de subir.</li>
-      <li>Pronto. É só pedir.</li>
-    </ol>
-    <p style="font-size:15px;">A skill não guarda o design system dentro dela: lê tudo deste
-      endereço a cada trabalho. Mudou aqui, mudou na próxima peça, sem baixar nada de novo. Ela
-      só avisa quando a própria skill tiver versão nova.</p>
-    <a class="botao" href="/skill/api-capital-claude-skill.zip">Baixar a skill</a>
-    <p style="font-size:15px;margin-top:24px;">Prefere não instalar nada? O texto para colar nas
-      instruções de um Projeto está em <a href="/PROMPT.md">PROMPT.md</a>.</p>
+    <p>Este é o caminho recomendado. Não precisa de conta extra, e a skill lê o design system
+      atualizado a cada pedido: mudou aqui, muda na próxima peça, sem baixar nada de novo.</p>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">1.</span> Baixe a skill</h3>
+      <p>O arquivo tem poucos KB e vai para a sua pasta Downloads.</p>
+      <a class="botao" href="/skill/api-capital-claude-skill.zip">Baixar a skill</a>
+      <p class="anota">No Safari, em vez do arquivo <code>.zip</code> pode aparecer uma pasta
+        <code>api-capital</code>. Tudo bem: no passo 4, suba o arquivo <code>SKILL.md</code> que
+        está dentro dela.</p>
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">2.</span> Abra Personalizar</h3>
+      <p>No Claude, clique em <strong>Personalizar</strong> na barra lateral e fique na aba
+        <strong>Habilidades</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo1_personalizar.png"
+           alt="Tela Personalizar do Claude, com a aba Habilidades aberta">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">3.</span> Adicionar, Fazer upload de habilidade</h3>
+      <p>Clique em <strong>Adicionar</strong>, no canto superior direito, e escolha
+        <strong>Fazer upload de habilidade</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo2_adicionar.png"
+           alt="Menu Adicionar aberto, com a opção Fazer upload de habilidade">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">4.</span> Suba o arquivo e salve</h3>
+      <p>Arraste o arquivo baixado para a caixa, ou clique nela para escolher. Vale
+        <code>.zip</code>, <code>.skill</code> ou o <code>SKILL.md</code>. A prévia mostra
+        <strong>api-capital</strong>. Clique em <strong>Salvar</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo3_upload.png"
+           alt="Tela Fazer upload de habilidade com o arquivo da skill e a prévia">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">5.</span> Confira se está ligada</h3>
+      <p>A skill <strong>api-capital</strong> aparece com a chave ligada, em azul. Pronto.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo4_instalada.png"
+           alt="Skill api-capital instalada, com a chave ligada">
+      <p class="anota">Já tinha uma versão instalada? Apague a antiga pelo menu de três pontos
+        antes de subir a nova.</p>
+    </div>
+
+    <h2>No dia a dia</h2>
+    <p>Abra uma conversa nova e peça em português, do seu jeito. A skill entra sozinha quando o
+      pedido fala da API Capital. No fim de cada entrega vem um bloco
+      <strong>CONFERÊNCIA</strong>, que diz a versão do design system lida e os arquivos usados.</p>
+
+    <div class="passo">
+      <p class="pedido">“Faz um papel de parede para o meu computador com a cara da API Capital”</p>
+      <p>O Claude entrega os papéis de parede oficiais, prontos para baixar.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_exemplo_papel_de_parede.png"
+           alt="Conversa em que o Claude entrega os papéis de parede oficiais da API Capital">
+    </div>
+
+    <div class="passo">
+      <p class="pedido">“Baixa a logo da API Capital horizontal para eu enviar para a gráfica”</p>
+      <p>Vem a logo em PDF e SVG, que é o que a gráfica pede, com as versões branca e
+        quase-preta.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_exemplo_logo_grafica.png"
+           alt="Conversa em que o Claude entrega a logo horizontal em PDF e SVG">
+    </div>
+
+    <div class="passo">
+      <p class="pedido">“Faz um gráfico para eu postar no meu instagram com a cara da API,
+        mostrando a evolução do IPCA vs IGPM nos últimos 5 anos.”</p>
+      <p>O Claude busca os dados, monta o post e entrega um PNG pronto para o feed.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_exemplo_grafico_instagram.png"
+           alt="Gráfico de barras IPCA e IGP-M no padrão da API Capital">
+      <p class="anota">Use o <strong>PNG</strong>. Junto pode vir um arquivo HTML; a prévia dele
+        dentro do Claude aparece sem cores e sem logo, e isso é esperado. Confira sempre os números
+        antes de postar.</p>
+    </div>
+
+    <h2>Quando sair versão nova</h2>
+    <p>O design system se atualiza sozinho. Só quando a própria skill mudar, o Claude avisa no
+      começo da conversa; aí é repetir os passos acima.</p>
+
+    <p style="margin-top:48px;">Prefere o Claude Design? Veja
+      <a href="/como-utilizar/usando-claude-design/">Usando Claude Design</a>. Não quer instalar
+      nada? O texto para colar nas instruções de um Projeto está em
+      <a href="/PROMPT.md">PROMPT.md</a>.</p>
   </main>
 </div>
 

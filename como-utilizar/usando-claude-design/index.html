@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Usando Claude Design · Design System API Capital</title>
+<link rel="icon" href="/assets/favicon/svg/api_capital_favicon.svg">
+<link rel="stylesheet" href="/tokens/api-capital.css">
+<link rel="stylesheet" href="/docs.css">
+<style>
+.secao a{color:var(--api-acao-secundaria);}
+.passo{margin:56px 0 0;}
+.passo h3{margin:0 0 12px;}
+.print{display:block;width:100%;height:auto;border:1px solid var(--api-borda);
+       border-radius:var(--api-canto);margin:20px 0 8px;}
+.print.retrato{max-width:520px;}
+.copiar{background:var(--api-fundo-bloco);border-radius:var(--api-canto);padding:16px 20px;
+        font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:14px;line-height:1.6;
+        margin:12px 0 8px;overflow-x:auto;white-space:pre-wrap;}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="dentro">
+    <a href="/"><img src="/assets/logo/svg/api_capital_logo05_azul.svg" alt="API Capital"></a>
+    <a class="nome" href="/">Design System</a>
+    <a class="acao" href="/como-utilizar/usando-claude/">Usar no Claude</a>
+  </div>
+</header>
+
+<div class="casco">
+  <div id="nav-lateral"></div>
+
+  <main class="conteudo secao">
+    <div class="subcabecalho">
+      <h1>Usando Claude Design</h1>
+      <p class="linhafina">Monte o design system da API Capital dentro do seu Claude Design, uma
+        vez, e todo projeto novo já nasce com a marca.</p>
+      <hr class="fio">
+    </div>
+
+    <div class="api-aviso-ok" style="max-width:72ch;margin-bottom:24px;">
+      <p style="margin:0;"><strong>Você precisa de uma conta no GitHub (gratuita) para usar o nosso
+        design system com o Claude Design.</strong> Crie em
+        <a href="https://github.com/signup">github.com/signup</a> antes de começar.</p>
+    </div>
+
+    <p>O Claude Design está em <a href="https://claude.ai/design">claude.ai/design</a> e na barra
+      lateral do app do Claude. As telas dele estão em inglês; os nomes dos botões aparecem aqui
+      como estão na tela. Não tem Claude Design ou ficou sem limite de uso? Use o caminho
+      <a href="/como-utilizar/usando-claude/">Usando Claude</a>.</p>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">1.</span> Set up a design system</h3>
+      <p>Abra <a href="https://claude.ai/design">claude.ai/design</a> e clique no selo
+        <strong>Set up a design system</strong>, no canto inferior direito. Ou abra a aba
+        <strong>Design systems</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo1_inicio.png"
+           alt="Tela inicial do Claude Design com o selo Set up a design system">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">2.</span> Create here</h3>
+      <p>Escolha <strong>Create here</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo2_create_here.png"
+           alt="Janela Add a design system com a opção Create here">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">3.</span> Preencha o formulário</h3>
+      <p>No campo <strong>Company name and blurb</strong>, cole:</p>
+      <div class="copiar">API Capital: consultoria de investimentos independente. Peças para clientes e para o mercado: propostas comerciais, apresentações, relatórios de carteira, cartas e posts.</div>
+      <p>Em <strong>Link code from GitHub</strong>, cole o endereço abaixo e clique em
+        <strong>Add</strong>. Os outros campos ficam vazios: tudo já está no repositório.</p>
+      <div class="copiar">https://github.com/lebeninca/api-capital-design-system</div>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo3_formulario.png"
+           alt="Formulário Set up your design system preenchido, com o repositório adicionado">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">4.</span> Continue to generation e Connect GitHub</h3>
+      <p>Clique em <strong>Continue to generation</strong>, no topo. Na janela que abre, clique em
+        <strong>Connect GitHub</strong>. Sem essa conexão, o Claude Design não lê o repositório.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo4_connect_github.png"
+           alt="Janela Connect GitHub to continue">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">5.</span> Autorize no GitHub</h3>
+      <p>Abre uma janela do GitHub. Entre na sua conta, se pedir, e clique em
+        <strong>Authorize</strong>.</p>
+      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_passo5_github_authorize.png"
+           alt="Tela do GitHub Authorize Claude Design Import">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">6.</span> Install &amp; Authorize</h3>
+      <p>Na tela seguinte, deixe como está e clique em <strong>Install &amp; Authorize</strong>.
+        A permissão é só de leitura.</p>
+      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_passo6_github_install.png"
+           alt="Tela do GitHub Install and Authorize Claude Design Import">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">7.</span> Confirme por e-mail, se pedir</h3>
+      <p>O GitHub pode pedir confirmação. Clique em <strong>Verify via email</strong> e use o
+        código que chega no seu e-mail.</p>
+      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_passo7_github_confirmar.png"
+           alt="Tela Confirm access do GitHub">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">8.</span> Feche a janela do GitHub</h3>
+      <p>Quando aparecer <strong>GitHub successfully linked</strong>, feche essa janela e volte ao
+        Claude Design.</p>
+      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_passo8_github_conectado.png"
+           alt="Mensagem GitHub successfully linked">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">9.</span> Attach your codebase</h3>
+      <p>O Claude Design mostra a lista de repositórios. Se
+        <strong>lebeninca/api-capital-design-system</strong> aparecer, marque e clique em
+        <strong>Continue</strong>. Se a lista vier vazia ou sem ele, clique em
+        <strong>Skip</strong>: o endereço colado no passo 3 já basta.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo9_escolher_repositorio.png"
+           alt="Janela For best results, attach your codebase">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">10.</span> Responda as perguntas</h3>
+      <p>Marque as peças que você mais usa e escolha <strong>Português (BR)</strong>. Clique em
+        <strong>Send answer</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo10_perguntas.png"
+           alt="Perguntas sobre peças prioritárias e idioma">
+    </div>
+
+    <div class="passo">
+      <h3><span class="api-numero-passo">11.</span> Espere a geração</h3>
+      <p>A montagem leva alguns minutos. Deixe a aba aberta.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo11_gerando.png"
+           alt="Tela Creating your design system">
+    </div>
+
+    <h2>No dia a dia</h2>
+    <p>Na tela inicial do Claude Design, confira se o seletor <strong>Design system</strong>, ao
+      lado da caixa de pedido, está no design system da API Capital. Depois é pedir em português:
+      <em>“faz um post para o Instagram com a evolução do IPCA nos últimos 5 anos”</em>.</p>
+
+    <h2>Quando sair versão nova</h2>
+    <p>Diferente da skill do chat, o Claude Design guarda uma cópia do design system. Quando
+      aparecer versão nova em <a href="/atualizacoes/">O que há de novo?</a>, abra o design system
+      da API Capital na aba <strong>Design systems</strong>, clique em <strong>Remix</strong> e peça:
+      <em>“atualize a partir do repositório”</em>.</p>
+  </main>
+</div>
+
+<script>
+fetch('/nav.html', {cache: 'no-store'}).then(r => r.text()).then(html => {
+  document.getElementById('nav-lateral').outerHTML = html;
+  const atual = document.querySelector('[data-nav="usando-claude-design"]');
+  if (atual) atual.classList.add('ativo');
+});
+</script>
+</body>
+</html>
