@@ -24,7 +24,7 @@ relacionados:
 | **ID** | O nome do defeito. É o que o validador imprime, e o que se cita numa correção |
 | **O defeito** | Como ele aparece na peça |
 | **O certo** | O que fazer no lugar |
-| **Teste** | O que a máquina procura. `—` marca o que só o olho julga |
+| **Teste** | O que a máquina procura. `olho` marca o que só o olho julga |
 
 **Alcance:** `css` vale para peça em código (HTML, CSS, e-mail, tela). `pen` vale para arquivo do
 Pencil e para peça montada por MCP de programa de design. `txt` vale para o texto de qualquer
@@ -44,7 +44,7 @@ peça.
 | `vermelho-verde-livre` | Vermelho ou verde da marca usados por gosto | Vermelho só no `m` da tagline e em erro; verde só em confirmação | `css` `pen`: uso de `#B71313` ou `#0E7A47` fora de elemento de erro, alerta ou confirmação |
 | `opacidade-em-vez-de-cor` | Cor sólida rebaixada com alpha para simular um tom mais claro | A variação da cor, que já existe na paleta | `css` `pen`: preenchimento com `opacity` entre 0,05 e 0,6 em retângulo, célula ou fundo de bloco |
 | `cinza-de-fabrica` | Cinza genérico de framework (`#F5F5F5`, `#EEE`, `#CCC`, `gray-100`) | `#E6E7E8` em bloco e borda; `#F4F4F4` em faixa de seção | `css`: cinza fora da paleta em fundo ou borda |
-| `latao-segunda-cor` | Latão espalhado pela tela: botão, checkbox, texto de rótulo, borda, ícone corrente — vira uma "segunda cor" forçada | Latão é detalhe: um número que importa, o fio do item ativo, no máximo uma caixa quente por página | `css` `pen`: `#AA7D41` ou `#9A7239` em 4 ou mais elementos distintos da mesma tela, ou em botão, checkbox, borda de campo ou rótulo |
+| `latao-segunda-cor` | Latão espalhado pela tela: botão, checkbox, texto de rótulo, borda, ícone corrente, e vira uma "segunda cor" forçada | Latão é detalhe: um número que importa, o fio do item ativo, no máximo uma caixa quente por página | `css` `pen`: `#AA7D41` ou `#9A7239` em 4 ou mais elementos distintos da mesma tela, ou em botão, checkbox, borda de campo ou rótulo |
 | `checkbox-colorido` | Checkbox ou rádio em latão ou outra cor fora do sistema | Caixa branca com borda `#E6E7E8`, marca em `accent-color` azul `#0D2A54`, 8 px até o rótulo | `css`: `accent-color` diferente de `#0D2A54`; input de seleção com fundo ou borda latão |
 
 ## 2 · Sombra, brilho e profundidade
@@ -88,7 +88,7 @@ peça.
 | `tres-colunas-identicas` | Três cards iguais no topo da página | Hierarquia de verdade, ou uma disposição própria | `css`: três irmãos de mesma largura e mesma estrutura no primeiro terço |
 | `fora-da-coluna` | Elemento que começa ou termina no meio de uma coluna | Começar e terminar em coluna | `pen` `css`: cruzar as bordas com as posições da grade de 12 |
 | `margem-fora-da-regua` | Margem que não é a do formato | 20 mm no A4, nas duas orientações; 4% em tela | `pen` `css`: medir a caixa útil |
-| `elemento-esticado-para-tapar-buraco` | Elemento crescido para preencher o pé da página | Sobra branca no fim é aceitável | `—` |
+| `elemento-esticado-para-tapar-buraco` | Elemento crescido para preencher o pé da página | Sobra branca no fim é aceitável | `olho` |
 | `borda-serrilhada` | Elementos que declaram o mesmo alinhamento começando em verticais diferentes (logo a 40, menu a 24, texto a 56) | Uma borda de alinhamento é UMA linha: mesma vertical para todos, recuo só como degrau declarado de hierarquia | `css` `pen`: coletar a borda esquerda dos blocos de mesmo nível e acusar desvio maior que 2 px |
 | `box-dentro-de-box` | Contêiner de fundo cinza agrupando campos dentro de um card que já tem fundo e borda | Campos direto sobre o fundo do card; grupo se marca com título e espaço, nunca com um segundo fundo | `css`: bloco com `background` de apoio contendo inputs, dentro de elemento que já tem borda ou fundo próprio |
 | `passo-em-bolinha` | Número de passo dentro de disco ou bolinha colorida antes do título | Número no próprio título, Inter 700 tabular, na cor do título, seguido de ponto | `css`: elemento circular (`border-radius` ≥ 50%) de menos de 40 px contendo só um número |
@@ -110,7 +110,7 @@ peça.
 
 | ID | O defeito | O certo | Teste |
 |---|---|---|---|
-| `simbolo-de-investimento` | Seta, candlestick ou gráfico como símbolo | O pelicano. A marca é o miolo | `—` |
+| `simbolo-de-investimento` | Seta, candlestick ou gráfico como símbolo | O pelicano. A marca é o miolo | `olho` |
 | `logo-remontada` | Logotipo montado à mão, letra por letra | Usar o componente oficial | `pen`: texto com o conteúdo `API` ou `CAPITAL` fora de um componente de logo |
 | `logo-fora-do-oficial` | Variação de logo gerada na hora, cor trocada, proporção alterada | Só os arquivos oficiais | `css`: imagem de logo fora da pasta de assets |
 | `mais-de-uma-caixa-quente` | Duas ou mais caixas latão ou ocre na mesma página | No máximo uma | `pen` `css`: contar caixas quentes por página |
@@ -124,8 +124,8 @@ peça.
 | `forma-nao-e-x-e-y` | A fôrma `não é X, é Y` | Reescrever no jeito falado | `txt`: expressão regular |
 | `canonizar` | O verbo e suas variações | Aprovar, fechar, oficializar | `txt`: `canoniz`, `canônic` |
 | `corporativês` | Mindset, disrupção, alavancar, sinergia | Palavra comum | `txt`: lista de termos |
-| `emoji-decorativo` | Emoji em qualquer papel — decoração ou no lugar de ícone (📎 num botão de anexo) | Nada, ou o ícone Lucide equivalente | `txt` `css`: caractere emoji em qualquer lugar da peça |
-| `jargao-sem-traducao` | Termo técnico solto para quem não é do ramo | Traduzir antes de usar | `—` |
+| `emoji-decorativo` | Emoji em qualquer papel (decoração, ou no lugar de ícone, como 📎 num botão de anexo) | Nada, ou o ícone Lucide equivalente | `txt` `css`: caractere emoji em qualquer lugar da peça |
+| `jargao-sem-traducao` | Termo técnico solto para quem não é do ramo | Traduzir antes de usar | `olho` |
 
 ## 9 · Acessibilidade
 
@@ -151,12 +151,12 @@ não sumirem, e **não** contam como veto do catálogo enquanto não tiverem tes
 ## Cobertura
 
 O validador expõe os IDs que implementa. Um teste de cobertura confere que **todo ID deste
-catálogo tem implementação, ou está declarado como `—`**. Catálogo e validador que se descolam
+catálogo tem implementação, ou está declarado como `olho`**. Catálogo e validador que se descolam
 viram documento passivo de novo, que é exatamente o que esta frente existe para evitar.
 
 | Estado | Contagem |
 |---|---|
 | Vetos catalogados | 56 |
 | Com teste declarado | 53 |
-| Só olho humano (`—`) | 3 |
+| Só olho humano (`olho`) | 3 |
 | **Implementados no validador** | **0 (o validador ainda não existe)** |

@@ -8,7 +8,7 @@ https://design.apicapital.com.br/<caminho do arquivo>
 
 Exemplo: `https://design.apicapital.com.br/assets/logo/svg/api_capital_logo01_azul.svg`
 
-**A lista completa, com os 2303 arquivos, está em `ativos.json`** — no mesmo padrão de URL.
+**A lista completa, com os 2303 arquivos, está em `ativos.json`**, no mesmo padrão de URL.
 
 ## O que existe, por categoria
 
@@ -48,6 +48,6 @@ A galeria com prévia de cada ativo, os formatos e a URL pronta para copiar est�
 
 ## Regra de uso
 
-Em peça de tela, referencie o ativo pela URL — não copie o arquivo e não redesenhe nada.
+Em peça de tela, referencie o ativo pela URL: não copie o arquivo e não redesenhe nada.
 O logo nunca se remonta com texto, e ícone se pega em `assets/icone/lucide/`, que traz a
 biblioteca Lucide completa em SVG.

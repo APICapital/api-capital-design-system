@@ -5,7 +5,7 @@
 body { margin: 0; background: var(--api-fundo); color: var(--api-texto);
        font-family: var(--api-corpo-font-family); }
 
-/* topo do site: barra de topo clara de 64 px — configuração 5 · Documentação */
+/* topo do site: barra de topo clara de 64 px, configuração 5 · Documentação */
 .topo { position: sticky; top: 0; z-index: 10; background: var(--api-fundo);
         border-bottom: 1px solid var(--api-borda); height: 64px; padding: 0 40px; /* acompanha a margem da página (lateral usa 40) */
         display: flex; align-items: center; }

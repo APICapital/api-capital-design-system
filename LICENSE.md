@@ -2,7 +2,7 @@
 
 Este repositório mistura três coisas com donos diferentes. A regra de cada uma:
 
-## 1 · A marca API Capital — todos os direitos reservados
+## 1 · A marca API Capital: todos os direitos reservados
 
 Logo, símbolo do pelicano, tagline, wordmark, favicon, o ladrilho do ninho, a paleta e o desenho
 do sistema são **propriedade da API Capital**. Estão publicados aqui para que sócios, consultores,
@@ -12,10 +12,10 @@ Isso **não** é uma licença de uso livre da marca. Não use o logo ou o nome d
 identificar outra empresa, produto ou serviço, para sugerir vínculo, patrocínio ou aprovação que
 não existam, nem em contexto que possa confundir o público sobre quem está falando.
 
-A especificação escrita — `DESIGN.md`, o catálogo de vetos e os tokens — pode ser lida, estudada e
+A especificação escrita (`DESIGN.md`, o catálogo de vetos e os tokens) pode ser lida, estudada e
 usada como referência de método por quem quiser. O que é reservado é a identidade, não a ideia.
 
-## 2 · Fontes e ícones — licenças abertas de terceiros
+## 2 · Fontes e ícones: licenças abertas de terceiros
 
 | O que | Licença | Onde está o texto |
 |---|---|---|
@@ -24,9 +24,9 @@ usada como referência de método por quem quiser. O que é reservado é a ident
 | Ícones Lucide | ISC License | `assets/icone/lucide/LICENSE` |
 
 As duas fontes podem ser usadas, incorporadas e redistribuídas nos termos da OFL, que exige que a
-licença viaje junto — é por isso que os arquivos acima estão aqui.
+licença viaje junto, e é por isso que os arquivos acima estão aqui.
 
-## 3 · Fotos e texturas fotográficas — Unsplash
+## 3 · Fotos e texturas fotográficas: Unsplash
 
 Uso gratuito, comercial e não comercial, sem necessidade de permissão. Autor e identificador de
 cada imagem em `assets/CREDITOS.md`.

@@ -11,7 +11,7 @@ aqui, obedece ao que está escrito nele.
 ## Componentes com código pronto
 
 **Barra de topo: não se desenha, copia-se.** O código das seis configurações (clara e escura)
-está em `componentes/barra-de-topo/codigo.html` — copie o CSS e uma das barras, e troque só
+está em `componentes/barra-de-topo/codigo.html`: copie o CSS e uma das barras, e troque só
 textos, ícones e logo. Medida, cor e caixa ficam como estão.
 
 ## Ao produzir
@@ -47,7 +47,7 @@ não recolore ícone fora da régua.
 Passe a peça pelo `ANTI_SLOP_VISUAL.md`, veto por veto. Os que mais reincidem: sombra, gradiente
 em elemento de interface, cor fora da paleta, canto diferente de 15, cápsula, caixa com faixa
 colorida na lateral, peça longa toda branca (`parede-sem-divisao`), terceira família tipográfica,
-número em Playfair, antetítulo — e, em ferramenta e formulário: **latão como segunda cor**
+número em Playfair, antetítulo e, em ferramenta e formulário: **latão como segunda cor**
 (`latao-segunda-cor`), **botão inventado** fora dos cinco declarados, **box dentro de box**
 (contêiner cinza agrupando campos dentro de card), **número de passo em bolinha**, **checkbox
 colorido** e **emoji no lugar de ícone**. Barra de topo de ferramenta é `.api-barra-topo`, nunca

@@ -489,7 +489,7 @@ Os nomes e a divisão em papéis são derivação. Use o token de papel na peça
 🔴 **O latão é detalhe, não segunda cor.** Numa tela ele aparece **poucas vezes**: um número que
 importa, o fio do item ativo, no máximo uma caixa quente. Latão em botão, checkbox, texto de
 rótulo, borda de campo ou espalhado por vários elementos da mesma tela é veto
-(`latao-segunda-cor`). Na dúvida, a cor é azul ou neutra — nunca latão.
+(`latao-segunda-cor`). Na dúvida, a cor é azul ou neutra, nunca latão.
 | `{colors.realce}` | `{colors.areia}` | Caixa de destaque com texto de leitura |
 
 ### Alinhamento
@@ -497,7 +497,7 @@ rótulo, borda de campo ou espalhado por vários elementos da mesma tela é veto
 🔴 **Toda borda de alinhamento é UMA linha só.** O que declara alinhamento à esquerda senta na
 mesma vertical: logo da barra de topo, itens da navegação lateral, título da página e corpo do
 conteúdo compartilham a mesma borda esquerda (a régua do respiro lateral, 40 px). O mesmo vale
-à direita. **Elemento fora da vertical dos vizinhos é defeito, não variação** — se dois blocos
+à direita. **Elemento fora da vertical dos vizinhos é defeito, não variação**: se dois blocos
 começam a 16 px de diferença, um dos dois está errado.
 
 - Recuo de hierarquia (item de grupo, subitem) é degrau declarado da escala de espaço, nunca um
@@ -508,12 +508,12 @@ começam a 16 px de diferença, um dos dois está errado.
 
 ### Ritmo de superfície em peça longa
 
-Peça de rolagem longa — apresentação em seções, relatório, proposta, página de muitas dobras —
+Peça de rolagem longa (apresentação em seções, relatório, proposta, página de muitas dobras)
 precisa que o leitor veja onde uma parte termina e a outra começa. Branco do topo ao pé apaga essa
 divisão e entrega uma parede sem articulação.
 
 **A régua:** a seção de uma peça longa alterna entre `{colors.fundo}` e `{colors.fundo-secao}`
-(`{colors.cinza-claro}`, `#F4F4F4`) — um cinza neutro puro, sem nenhum vermelho nem amarelo na
+(`{colors.cinza-claro}`, `#F4F4F4`), um cinza neutro puro, sem nenhum vermelho nem amarelo na
 mistura. A faixa `{colors.fundo-escuro}` continua sendo o degrau de destaque, usada com
 parcimônia.
 
@@ -523,9 +523,9 @@ papel de peça impressa. Quem carrega o ritmo da peça longa é o cinza-claro.
 Os limites, que são o que impede a válvula de virar carnaval:
 
 - **Duas superfícies claras por peça:** branco e o cinza-claro. Não existe uma terceira.
-- **A superfície pinta a FAIXA da seção inteira**, de borda a borda — nunca o card de dentro. Card sobre faixa de seção volta ao branco, ou se resolve por linha.
+- **A superfície pinta a FAIXA da seção inteira**, de borda a borda, nunca o card de dentro. Card sobre faixa de seção volta ao branco, ou se resolve por linha.
 - **Zero cor nova.** A alternância consome token; hex escrito à mão segue vetado.
-- **O padrão continua branco.** Peça curta — uma dobra, um card, um e-mail, uma folha A4 — nasce branca e não alterna.
+- **O padrão continua branco.** Peça curta (uma dobra, um card, um e-mail, uma folha A4) nasce branca e não alterna.
 - **A troca de superfície basta.** Não se põe fio entre uma seção e a outra: o degrau de fundo já divide.
 - **O documento inteiro nunca é de apoio.** A superfície é faixa dentro da peça; `body` e container raiz ficam em `{colors.fundo}`.
 
@@ -561,7 +561,7 @@ título 28, corpo 17 e legenda 14. Os demais níveis e todo o tracking são deri
 
 Em página de documentação, o título pesa MENOS: página e seção em Playfair **medium** (500).
 **O `{typography.display}` bold é registro de CHAMADA: anúncio, hero de campanha, peça
-gritante — e só isso.** Capa e abertura de peça editorial ficam no medium; o medium é a régua
+gritante, e só isso.** Capa e abertura de peça editorial ficam no medium; o medium é a régua
 de leitura, o bold é a exceção de impacto. A Playfair embarcada cobre os seis pesos (400 a 900) e os dois
 itálicos; consuma o peso que o token declara, nunca um sintetizado.
 
@@ -614,7 +614,7 @@ contêiner de rolagem e desativa `position: sticky`).
 | Nível | Tamanho e entrelinha |
 |---|---|
 | Título | Playfair Display **Medium** 130 |
-| Chamada gritante | Playfair Display Bold — só em chamada e anúncio, nunca em capa ou miolo editorial |
+| Chamada gritante | Playfair Display Bold, só em chamada e anúncio, nunca em capa ou miolo editorial |
 | Linha-fina | Inter Regular 44 / 1,40 |
 | Corpo | Inter Regular 34 / 1,62 |
 | Citação | Playfair Display Italic 56 |
@@ -626,7 +626,7 @@ Alinhamento à esquerda, sem justificar.
 
 **Em peça editorial impressa (carta mensal, relatório), a capa e o título de abertura ficam em
 Playfair MEDIUM (500) e o título de seção em Playfair REGULAR (400). Playfair Bold é SÓ para
-chamada, anúncio e peça gritante** — não entra em capa nem em miolo editorial. O fio sob o
+chamada, anúncio e peça gritante**: não entra em capa nem em miolo editorial. O fio sob o
 título e as linhas separadoras do miolo são **capilares** (0,5 pt · 2 px a 300 dpi).
 
 ### Princípios
@@ -747,7 +747,7 @@ em azul, branco e quase-preto. O nome diz tudo: `api_capital_logo03_branco.svg`.
 
 🔴 **Todo arquivo de logo é JUSTO: o canvas é a caixa exata da arte, sem margem embutida.**
 `height: 42px` significa arte de 42 px. (Até 2026-08-26 os arquivos embutiam a área livre no
-canvas e toda peça gerada saía com logo minúscula — eles foram substituídos, com os mesmos
+canvas e toda peça gerada saía com logo minúscula; eles foram substituídos, com os mesmos
 nomes.) A área livre é régua de APLICAÇÃO (§Área livre): quem monta a peça deixa o respiro em
 volta, ele não viaja dentro do arquivo.
 
@@ -756,7 +756,7 @@ volta, ele não viaja dentro do arquivo.
 - **Barra de topo e navegação:** a logo principal (`logo01`) com **56 px** na barra de 96;
   44 px na de 72; 36 px na de 64.
 - **Rodapé:** 28 a 32 px.
-- **Mínimo absoluto em tela: 24 px de altura.** Logo menor que isso não entra — na dúvida, a
+- **Mínimo absoluto em tela: 24 px de altura.** Logo menor que isso não entra: na dúvida, a
   logo é MAIOR do que parece necessário, nunca menor.
 
 ### Área livre
@@ -846,7 +846,7 @@ borda de 1 px em `{colors.acao}`, mesma geometria.
 
 **`{components.botao-utilidade}`** é o botão de ferramenta: contorno em `{colors.acao}`, tipo
 `{typography.botao-utilidade}` (14 px), altura **32 px**, respiro lateral de 12 px e canto
-`{rounded.canto-ferramenta}` (10 px — o canto de 15 num botão de 32 vira cápsula). A versão
+`{rounded.canto-ferramenta}` (10 px: o canto de 15 num botão de 32 vira cápsula). A versão
 cheia é `{components.botao-utilidade-cheio}`. **Em ferramenta, todo botão é de utilidade**,
 inclusive a ação principal (exportar, salvar, gerar). Os botões de 48 e 56 px são de página
 pública e de chamada (§Densidade em ferramenta).
@@ -874,8 +874,8 @@ cinza para agrupar campos dentro de um card: caixa dentro de caixa é veto
 (`box-dentro-de-box`). Grupo de campos se marca com título de grupo e espaço, nunca com um
 segundo fundo.
 
-**Botão dentro de formulário é um dos declarados em §Botão.** Botão ao lado de um campo —
-"Hoje", "Anexar arquivo", "Limpar" — é `{components.botao-secundario}` em site e
+**Botão dentro de formulário é um dos declarados em §Botão.** Botão ao lado de um campo
+("Hoje", "Anexar arquivo", "Limpar") é `{components.botao-secundario}` em site e
 `{components.botao-utilidade}` em ferramenta. Anexo de arquivo usa o ícone Lucide `paperclip`.
 
 ### Caixa de seleção
@@ -887,7 +887,7 @@ por sistema e não respeita a medida. Marcada: fundo `{colors.acao}` e tique bra
 Rádio segue a mesma régua, redondo. **Checkbox nunca é latão,
 nem qualquer outra cor fora de `{colors.acao}`.**
 
-Entre a caixa e o rótulo entra respiro de `{spacing.x2}` 8 px, sempre — caixa colada no texto é
+Entre a caixa e o rótulo entra respiro de `{spacing.x2}` 8 px, sempre: caixa colada no texto é
 erro. O rótulo do checkbox fica em `{typography.corpo}` em site e em `{typography.corpo-pequeno}`
 em ferramenta, sem caixa alta.
 
@@ -905,11 +905,11 @@ canto inferior direito.
 
 ### Content card
 
-A família de card de **ferramenta, painel e página interna** — formulário em etapas, dashboard,
-gerador. É ela que se usa nesses territórios, nunca um bloco inventado.
+A família de card de **ferramenta, painel e página interna** (formulário em etapas, dashboard,
+gerador). É ela que se usa nesses territórios, nunca um bloco inventado.
 
 **A regra de superfície que sustenta a família:** em página de ferramenta, o fundo da página é
-`{colors.fundo-secao}` (`#F4F4F4`) e o content card é **branco, SEM borda** — é o degrau de fundo
+`{colors.fundo-secao}` (`#F4F4F4`) e o content card é **branco, SEM borda**: é o degrau de fundo
 que separa o card da página, não contorno. Contorno fino em volta de card de ferramenta é veto.
 (O `{components.card-conteudo}` com borda no fio segue existindo para peça editorial sobre fundo
 branco.)
@@ -926,7 +926,7 @@ Três réguas de respiro que valem em toda a família:
 - **Entre o bloco de título (com linha-fina ou categoria) e o corpo entra espaço**, maior que o
   entrelinhas.
 
-As variações — todas com a mesma base, mudando só o que está dito:
+As variações, todas com a mesma base, mudando só o que está dito:
 
 | Variação | O que muda | Quando |
 |---|---|---|
@@ -942,12 +942,12 @@ As variações — todas com a mesma base, mudando só o que está dito:
 
 Limites da família:
 
-- **Card de ferramenta não tem borda, não tem sombra, não tem fundo cinza interno** — o grupo
+- **Card de ferramenta não tem borda, não tem sombra, não tem fundo cinza interno**: o grupo
   interno se marca com título e espaço (§Campo).
 - **Não existe a variação com faixa indicadora na base.** Faixa colorida em borda de card é veto
   (`callout-faixa-lateral`), e aqui não há exceção.
 - Na variação com número, a seta e a variação percentual podem usar `{colors.ok}` e
-  `{colors.erro}` **porque comunicam dado, e sempre com o valor escrito ao lado** — a cor sozinha
+  `{colors.erro}` **porque comunicam dado, e sempre com o valor escrito ao lado**: a cor sozinha
   não comunica.
 - Grade: os content cards de um painel assentam na grade de 12 colunas, com junta de
   `{spacing.x6}` 24 px entre cards.
@@ -1002,15 +1002,15 @@ Em tela sensível ao toque, o alvo de cada ícone cresce para 44 px sem mudar o 
 
 **Qual logo entra:**
 
-- **Logo extensa** — na esquerda ou no centro, quando a página não tem título.
-- **Selo isolado** (círculo do pelicano) — quando a página tem outro título.
+- **Logo extensa**: na esquerda ou no centro, quando a página não tem título.
+- **Selo isolado** (círculo do pelicano): quando a página tem outro título.
 
 **Na versão escura**, fundo `{colors.fundo-escuro}`, logo branca, ícone e texto em
 `{colors.sobre-escuro}`, a ação cheia inverte (fundo branco, texto azul) e o campo de busca usa
 `{colors.azul-var}`.
 
-**Seis configurações prontas** — site simples, site com navegação, painel com busca, gerador de
-documento, documentação e completa — em **Padrões · Barra de topo**, cada uma em clara e escura.
+**Seis configurações prontas** (site simples, site com navegação, painel com busca, gerador de
+documento, documentação e completa) em **Padrões · Barra de topo**, cada uma em clara e escura.
 🔴 **Para montar uma barra, copie o código pronto de
 `design.apicapital.com.br/componentes/barra-de-topo/codigo.html` e troque só textos, ícones e
 logo. Não se desenha barra do zero.**
@@ -1019,7 +1019,7 @@ logo. Não se desenha barra do zero.**
 
 Formulário ou fluxo em etapas numera o passo **dentro do próprio título**, com
 **`{components.numero-passo}`**: o número em `{typography.numero}` (Inter 700, figura tabular),
-na cor do título `{colors.azul}`, seguido de ponto e do nome do passo — `1. Cliente e consultor`.
+na cor do título `{colors.azul}`, seguido de ponto e do nome do passo, como `1. Cliente e consultor`.
 
 **Sem círculo, sem bolinha, sem fundo, sem latão.** Número de passo dentro de disco colorido é
 veto (`passo-em-bolinha`).
@@ -1042,7 +1042,7 @@ apuração em `{typography.legenda}`.
 
 **Tabela curta de comparação** (duas ou três linhas, com as classes lado a lado): título de
 coluna e valor ficam **centralizados**, o valor exatamente sob o seu título. O número à direita
-é régua de tabela longa de dados — aplicado numa tabela curta, título e valor caem cada um num
+é régua de tabela longa de dados; aplicado numa tabela curta, título e valor caem cada um num
 canto e a peça desalinha.
 
 ### Gráfico
@@ -1052,7 +1052,7 @@ Cores de série, nesta ordem: `{colors.azul}` · `{colors.latao}` · `{colors.az
 
 **A paleta serve à mensagem.** A ordem acima é o padrão, não camisa de força: em gráfico denso
 ou heatmap, cores de dado fora da marca (tons pastéis, verdes) entram quando melhoram a
-leitura. A identidade da peça fica na tipografia, no layout e na moldura — não na cor de cada
+leitura. A identidade da peça fica na tipografia, no layout e na moldura, não na cor de cada
 série.
 
 Eixo Y sempre com valores, barra partindo do zero (linha pode escalar: a régua é de barra),
@@ -1113,7 +1113,7 @@ horizontal dentro do próprio bloco. A barra de topo mantém 64 px em qualquer l
 - Percentual escrito sobre a fatia da rosca
 - Fio entre linhas de tabela
 - Mais de uma caixa quente por página
-- Emoji, em qualquer papel — inclusive no lugar de ícone. Ícone é Lucide
+- Emoji, em qualquer papel, inclusive no lugar de ícone. Ícone é Lucide
 - Símbolo que remeta a mercado financeiro: gráfico, seta, candelabro japonês
 - Latão como segunda cor da tela: em botão, checkbox, texto de rótulo, borda, ou repetido em vários elementos
 - Botão fora dos cinco declarados em §Botão

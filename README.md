@@ -13,7 +13,7 @@ cd api-capital-design-system
 claude
 ```
 
-O `CLAUDE.md` da raiz é lido sozinho no começo da sessão — ele manda o Claude ler a
+O `CLAUDE.md` da raiz é lido sozinho no começo da sessão, e ele manda o Claude ler a
 especificação e os vetos antes de produzir qualquer coisa. Daí é só pedir a peça: *"monta uma
 apresentação de primeira reunião"*, *"faz a proposta de trabalho em HTML"*.
 
@@ -30,7 +30,7 @@ Peça montada fora desta pasta não herda nada disso. Se for produzir em outro p
 
 **É deste endereço que as peças bebem.** Peça de tela importa
 `tokens/api-capital.css` por link e referencia logo, ícone e imagem pela URL do
-`INDICE_ATIVOS.md` — atualizou aqui, atualizou em toda peça já entregue.
+`INDICE_ATIVOS.md`: atualizou aqui, atualizou em toda peça já entregue.
 
 Para publicar o que mudou:
 
@@ -42,7 +42,7 @@ Antes disso, se mexeu nos tokens rode `python3 tokens/gerar_tokens.py`; se acres
 renomeou ativo, `python3 gerar_indice_ativos.py`.
 
 **A skill do Claude é um ponteiro** (`skill/api-capital/SKILL.md`): nenhum pedaço do design system
-viaja dentro dela — o material é lido deste endereço a cada trabalho. Por isso quem instalou uma
+viaja dentro dela: o material é lido deste endereço a cada trabalho. Por isso quem instalou uma
 vez nunca fica com a régua velha, e o `.zip` só precisa ser refeito (`./empacotar_skill.sh`) quando
 o protocolo dela ou o endereço mudarem.
 

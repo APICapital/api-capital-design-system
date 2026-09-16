@@ -30,7 +30,7 @@
   <div class="dentro">
     <a href="/"><img src="/assets/logo/svg/api_capital_logo05_azul.svg" alt="API Capital"></a>
     <a class="nome" href="/">Design System</a>
-    <a class="acao" href="/como-utilizar/usando-claude/">Baixar a skill</a>
+    <a class="acao" href="/como-utilizar/usando-claude/">Usar no Claude</a>
   </div>
 </header>
 
@@ -54,6 +54,23 @@
     <h2>Histórico de versões</h2>
 
     <div class="versao">
+      <div class="cabeca"><span class="num">v1.9</span><span class="data">16 de setembro de 2026</span></div>
+      <h3>Skill versão 4</h3>
+      <p>A skill do Claude passa a ler o design system direto do repositório no GitHub, com este
+        site como reserva. Quem tem a versão 3 instalada recebe o aviso para trocar.</p>
+      <ul>
+        <li><strong>Instalação</strong> com o caminho da tela em português: Configurações →
+          Personalizar → Habilidades → Adicionar → Fazer upload de habilidade. O arquivo pode
+          chegar como <code>.zip</code> ou <code>.skill</code>.</li>
+        <li><strong>Botão do topo</strong> passa a se chamar <em>Usar no Claude</em>.</li>
+        <li><strong>Vetos de texto</strong> reforçados na skill: travessão entra na lista dos que
+          mais reincidem.</li>
+        <li><strong>Documentação sem travessão</strong>, em obediência ao próprio catálogo de
+          vetos.</li>
+      </ul>
+    </div>
+
+    <div class="versao">
       <div class="cabeca"><span class="num">v1.8</span><span class="data">15 de setembro de 2026</span></div>
       <h3>A página de ativos</h3>
       <p>Pegar um arquivo de marca deixa de ser garimpo no repositório. A página
@@ -62,7 +79,7 @@
         ao lado e o endereço a um clique.</p>
       <ul>
         <li><strong>Busca por nome</strong> e atalho por categoria.</li>
-        <li><strong>Copiar URL</strong> entrega o endereço público pronto para colar na peça — que
+        <li><strong>Copiar URL</strong> entrega o endereço público pronto para colar na peça, que
           é como o sistema manda usar o ativo.</li>
         <li><strong>Prévia sobre xadrez</strong> em logo, pelicano, tagline e gradiente: o xadrez
           mostra que o arquivo não tem fundo próprio.</li>
@@ -113,7 +130,7 @@
         DESIGN.md como os demais tokens.</p>
       <ul>
         <li><strong><code>tokens/tema-echarts.js</code></strong>: registra o tema
-          <code>api-capital</code> no Apache ECharts — ordem das cores de série, tipografia,
+          <code>api-capital</code> no Apache ECharts: ordem das cores de série, tipografia,
           eixos, grade, legenda, dica, rosca com furo, candlestick em ok/erro. Carregue o
           ECharts, depois este arquivo, e inicie o gráfico com <code>echarts.init(el,
           'api-capital')</code>.</li>
@@ -128,7 +145,7 @@
       <p>Três regras nasceram no desenho da carta mensal e viraram lei do sistema.</p>
       <ul>
         <li><strong>A paleta do gráfico serve à mensagem</strong>: a ordem de série da marca é
-          o padrão, não camisa de força — em gráfico denso ou heatmap, cores de dado fora da
+          o padrão, não camisa de força. Em gráfico denso ou heatmap, cores de dado fora da
           marca entram quando melhoram a leitura.</li>
         <li><strong>Tabela curta de comparação centraliza</strong>: título de coluna e valor
           centrados, o valor sob o seu título; o número à direita fica pra tabela longa de
@@ -150,7 +167,7 @@
       <ul>
         <li><strong>Três famílias, 103 classes</strong>: <code>vao</code> (gap, com variantes
           só-colunas e só-linhas), <code>margem</code> e <code>respiro</code>, por lado e por
-          eixo — <code>.api-respiro-x10</code>, <code>.api-margem-topo-x6</code>.</li>
+          eixo, como <code>.api-respiro-x10</code>, <code>.api-margem-topo-x6</code>.</li>
         <li><strong>A página de Espaçamento</strong> documenta as três famílias com exemplo
           vivo, código e a tabela de classes de cada uma.</li>
         <li>DESIGN.md interno v3.4, com a régua e o padrão de nome em §Utilitários de

@@ -50,7 +50,7 @@ linhas = [
     f"Exemplo: `{BASE}/assets/logo/svg/api_capital_logo01_azul.svg`",
     "",
     "**A lista completa, com os "
-    f"{len(arquivos)} arquivos, está em `ativos.json`** — no mesmo padrão de URL.",
+    f"{len(arquivos)} arquivos, está em `ativos.json`**, no mesmo padrão de URL.",
     "",
     "## O que existe, por categoria",
     "",
@@ -75,7 +75,7 @@ linhas += [
     "",
     "## Regra de uso",
     "",
-    "Em peça de tela, referencie o ativo pela URL — não copie o arquivo e não redesenhe nada.",
+    "Em peça de tela, referencie o ativo pela URL: não copie o arquivo e não redesenhe nada.",
     "O logo nunca se remonta com texto, e ícone se pega em `assets/icone/lucide/`, que traz a",
     "biblioteca Lucide completa em SVG.",
     "",
