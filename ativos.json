@@ -1,7 +1,26 @@
 {
  "base": "https://design.apicapital.com.br",
- "total": 2303,
+ "total": 2320,
  "categorias": {
+  "assinatura": [
+   "assets/assinatura/api_capital_assinatura_contato_email_azul@4x.png",
+   "assets/assinatura/api_capital_assinatura_contato_site_azul@4x.png",
+   "assets/assinatura/api_capital_assinatura_contato_telefone_azul@4x.png",
+   "assets/assinatura/api_capital_assinatura_marcador_foto_quadrada@2x.png",
+   "assets/assinatura/api_capital_assinatura_marcador_foto_redonda@2x.png",
+   "assets/assinatura/api_capital_assinatura_rede_facebook_azul@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_facebook_branco@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_instagram_azul@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_instagram_branco@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_linkedin_azul@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_linkedin_branco@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_whatsapp_azul@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_whatsapp_branco@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_x_azul@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_x_branco@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_youtube_azul@4x.png",
+   "assets/assinatura/api_capital_assinatura_rede_youtube_branco@4x.png"
+  ],
   "favicon": [
    "assets/favicon/pdf/api_capital_favicon.pdf",
    "assets/favicon/pdf/api_capital_favicon_32.pdf",

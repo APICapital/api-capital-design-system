@@ -792,6 +792,11 @@ preenchimento.
 
 Posição no card: canto inferior direito.
 
+**Exceção: logo de rede social.** A Lucide não tem logo de marca. LinkedIn, Instagram, YouTube,
+Facebook, X e WhatsApp usam a biblioteca **Phosphor**, peso regular, em `{colors.azul}` ou
+`{colors.branco}`. A exceção vale só para logo de rede social; qualquer outro ícone segue na
+Lucide. Os arquivos prontos, em PNG, estão em `assets/assinatura/`.
+
 ## Imagem
 
 ### Fotografia
@@ -1163,6 +1168,7 @@ Os ativos prontos para uso ficam neste pacote, em `assets/`:
 | Social | `assets/social/` | png, no tamanho de cada plataforma |
 | Splash | `assets/splash/` | png 1290 × 2796 |
 | Foto | `assets/foto/` | png |
+| Assinatura de e-mail | `assets/assinatura/` | png: logos de rede social (Phosphor) em azul e branco, ícones de contato e marcadores de foto |
 | Exemplos | `exemplos/` | png e pdf das folhas do sistema |
 
 | Biblioteca Lucide completa | `assets/icone/lucide/` | 1.767 svg |
