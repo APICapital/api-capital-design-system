@@ -781,6 +781,12 @@ Nenhum elemento entra nessa faixa: texto, fio, imagem ou borda de foto.
 - Pôr sombra ou contorno para separar do fundo
 - Usar arquivo que não seja o oficial
 
+### Opacidade
+
+Reduzir a opacidade do logo é permitido, por exemplo para usá-lo como marca d'água. O arquivo
+continua o oficial, inteiro e na cor dele. O veto de opacidade em §Vetos vale para cor de
+preenchimento, não para o logo.
+
 ## Ícone
 
 A iconografia usa a biblioteca **Lucide**, de traço único e geometria simples.
@@ -1104,7 +1110,7 @@ horizontal dentro do próprio bloco. A barra de topo mantém 64 px em qualquer l
 
 - Sombra, brilho, vidro fosco, translucidez
 - Gradiente entre duas cores, ou em elemento de interface
-- Cor sólida rebaixada com opacidade para simular tom mais claro
+- Cor sólida rebaixada com opacidade para simular tom mais claro (o logo com opacidade reduzida é permitido, §Logo)
 - Cápsula (`9999px`)
 - Contorno cinza claro de 1 px em volta de tudo
 - Caixa de destaque com faixa colorida na lateral ou no topo
