@@ -1,5 +1,5 @@
 ---
-version: "3.6"
+version: "3.7"
 name: "API Capital"
 description: "Consultoria de investimentos independente. Clássico moderno e autoridade tranquila: azul-meia-noite e latão sobre branco puro, Playfair Display em título e Inter em todo o resto, incluindo cada número apresentado. Zero sombra, canto de 15, grade de 12 colunas. O sistema atende impresso e tela com a mesma régua, e o padrão é sempre o registro mais sóbrio."
 
@@ -21,6 +21,7 @@ colors:
   cinza-claro: "#F4F4F4"
   creme-var: "#DBD4C5"
   areia-var: "#D0B980"
+  parceiro: "#A1A1A1"
   # Escopo fechado
   erro: "#B71313"
   ok: "#0E7A47"
@@ -399,7 +400,7 @@ zona: publica
 dominio: design
 bandeira: 06_marketing_api_capital
 produto: api_capital
-versao: 3.6
+versao: 3.7
 resumo: >-
   Especificação de design da API Capital, no formato design.md: tokens de cor, tipografia,
   espaço, forma e componente, mais as regras de layout, logo, ícone, imagem, estado e veto.
@@ -787,6 +788,46 @@ Reduzir a opacidade do logo é permitido, por exemplo para usá-lo como marca d'
 continua o oficial, inteiro e na cor dele. O veto de opacidade em §Vetos vale para cor de
 preenchimento, não para o logo.
 
+## Logos de parceiros
+
+As plataformas onde a API opera e com quem tem convênio. **Os arquivos estão em
+`assets/parceiros/`**, em `svg/` e `png/` (200 px de altura, fundo transparente). Nome:
+`api_capital_parceiro_<nome>`.
+
+No Pen, logo de parceiro entra como **vetor**, nunca como PNG: o script
+`assets/parceiros/pen/logos_parceiros_api.js` desenha qualquer um deles (nó `script`, entrada
+`logo` com o nome do arquivo e `color` com `{colors.parceiro}`).
+
+Três regras, sem exceção:
+
+1. **Ordem alfabética**, sempre. Nenhum parceiro vem antes por tamanho ou relevância.
+2. **Mesma cor para todos:** `{colors.parceiro}` (`#A1A1A1`), cinza sólido. O logo
+   nunca entra na cor da marca dele nem na cor da API. O arquivo já vem nessa cor.
+3. **Mesmo peso visual entre todos.** Altura igual não basta: um logo quadrado e cheio pesa
+   mais que um logo largo e fino. A altura de cada um vem da tabela abaixo, calculada para
+   que todos ocupem a mesma área aparente, com correção óptica nos que pesam mais ou menos
+   do que a área indica.
+
+| Parceiro | Arquivo | Altura na linha de referência |
+|---|---|---|
+| Ágora | `api_capital_parceiro_agora` | 27 px |
+| Avenue | `api_capital_parceiro_avenue` | 20 px |
+| Brasilprev | `api_capital_parceiro_brasilprev` | 19 px |
+| BTG Pactual | `api_capital_parceiro_btg_pactual` | 35 px |
+| C6 Bank | `api_capital_parceiro_c6_bank` | 22 px |
+| Genial | `api_capital_parceiro_genial` | 31 px |
+| Inter | `api_capital_parceiro_inter` | 24 px |
+| Morgan Stanley | `api_capital_parceiro_morgan_stanley` | 19 px |
+| Nomad | `api_capital_parceiro_nomad` | 24 px |
+| Safra | `api_capital_parceiro_safra` | 31 px |
+| Stoa | `api_capital_parceiro_stoa` | 27 px |
+| XP Investimentos | `api_capital_parceiro_xp_investimentos` | 40 px |
+
+A linha de referência é a de uma peça A4 em tela (logo em grade de quatro colunas). Para
+outro tamanho, multiplique todas as alturas pelo mesmo fator: a proporção entre elas não
+muda. Em grade, cada logo se centra na própria célula.
+
+
 ## Ícone
 
 A iconografia usa a biblioteca **Lucide**, de traço único e geometria simples.
@@ -1165,6 +1206,7 @@ Os ativos prontos para uso ficam neste pacote, em `assets/`:
 |---|---|---|
 | Logo | `assets/logo/` | svg · png 1x 2x 4x · pdf |
 | Tagline | `assets/tagline/` | svg · png 1x 2x 4x · pdf |
+| Logos de parceiros | `assets/parceiros/` | svg · png |
 | Ícone | `assets/icone/` | svg · png 1x 2x 4x · pdf |
 | Gradiente | `assets/gradiente/` | svg · png 1x 2x 4x · pdf |
 | Favicon | `assets/favicon/` | svg · png 1x 2x 4x · pdf |

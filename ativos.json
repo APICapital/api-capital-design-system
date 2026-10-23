@@ -1,6 +1,6 @@
 {
  "base": "https://design.apicapital.com.br",
- "total": 2320,
+ "total": 2344,
  "categorias": {
   "assinatura": [
    "assets/assinatura/api_capital_assinatura_contato_email_azul@4x.png",
@@ -2263,6 +2263,32 @@
    "assets/paleta/png/api_capital_paleta@2x.png",
    "assets/paleta/png/api_capital_paleta@4x.png",
    "assets/paleta/svg/api_capital_paleta.svg"
+  ],
+  "parceiros": [
+   "assets/parceiros/png/api_capital_parceiro_agora.png",
+   "assets/parceiros/png/api_capital_parceiro_avenue.png",
+   "assets/parceiros/png/api_capital_parceiro_brasilprev.png",
+   "assets/parceiros/png/api_capital_parceiro_btg_pactual.png",
+   "assets/parceiros/png/api_capital_parceiro_c6_bank.png",
+   "assets/parceiros/png/api_capital_parceiro_genial.png",
+   "assets/parceiros/png/api_capital_parceiro_inter.png",
+   "assets/parceiros/png/api_capital_parceiro_morgan_stanley.png",
+   "assets/parceiros/png/api_capital_parceiro_nomad.png",
+   "assets/parceiros/png/api_capital_parceiro_safra.png",
+   "assets/parceiros/png/api_capital_parceiro_stoa.png",
+   "assets/parceiros/png/api_capital_parceiro_xp_investimentos.png",
+   "assets/parceiros/svg/api_capital_parceiro_agora.svg",
+   "assets/parceiros/svg/api_capital_parceiro_avenue.svg",
+   "assets/parceiros/svg/api_capital_parceiro_brasilprev.svg",
+   "assets/parceiros/svg/api_capital_parceiro_btg_pactual.svg",
+   "assets/parceiros/svg/api_capital_parceiro_c6_bank.svg",
+   "assets/parceiros/svg/api_capital_parceiro_genial.svg",
+   "assets/parceiros/svg/api_capital_parceiro_inter.svg",
+   "assets/parceiros/svg/api_capital_parceiro_morgan_stanley.svg",
+   "assets/parceiros/svg/api_capital_parceiro_nomad.svg",
+   "assets/parceiros/svg/api_capital_parceiro_safra.svg",
+   "assets/parceiros/svg/api_capital_parceiro_stoa.svg",
+   "assets/parceiros/svg/api_capital_parceiro_xp_investimentos.svg"
   ],
   "social": [
    "assets/social/png/api_capital_social_capa_facebook_azul.png",
