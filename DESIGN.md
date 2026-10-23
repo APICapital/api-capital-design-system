@@ -21,7 +21,7 @@ colors:
   cinza-claro: "#F4F4F4"
   creme-var: "#DBD4C5"
   areia-var: "#D0B980"
-  parceiro: "#A1A1A1"
+  parceiro: "#5E5E5E"
   # Escopo fechado
   erro: "#B71313"
   ok: "#0E7A47"
@@ -801,7 +801,7 @@ No Pen, logo de parceiro entra como **vetor**, nunca como PNG: o script
 Três regras, sem exceção:
 
 1. **Ordem alfabética**, sempre. Nenhum parceiro vem antes por tamanho ou relevância.
-2. **Mesma cor para todos:** `{colors.parceiro}` (`#A1A1A1`), cinza sólido. O logo
+2. **Mesma cor para todos:** `{colors.parceiro}` (`#5E5E5E`), cinza sólido. O logo
    nunca entra na cor da marca dele nem na cor da API. O arquivo já vem nessa cor.
 3. **Mesmo peso visual entre todos.** Altura igual não basta: um logo quadrado e cheio pesa
    mais que um logo largo e fino. A altura de cada um vem da tabela abaixo, calculada para
