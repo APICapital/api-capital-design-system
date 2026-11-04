@@ -194,9 +194,9 @@ def resolver(dados, ref):
 
 # Marca d'água: todo gráfico do tema leva o logo da API no fundo (Leandro, 2026-11-04, depois de um
 # gráfico nosso ser copiado e republicado no LinkedIn sem permissão). DESIGN.md §Gráfico.
-MARCA_DAGUA_LOGO = AQUI.parent / "assets" / "logo" / "svg" / "api_capital_logo01_azul.svg"
+MARCA_DAGUA_LOGO = AQUI.parent / "assets" / "logo" / "svg" / "api_capital_logo03_azul.svg"
 MARCA_DAGUA_OPACIDADE = 0.12  # 0.07 sumia em monitor de contraste baixo (Leandro, 04/11)
-MARCA_DAGUA_LARGURA = 0.85  # fração da área dos dados que o logo ocupa, na largura ou na altura
+MARCA_DAGUA_LARGURA = 0.72  # fração da área dos dados que o logo ocupa, na largura ou na altura
 
 
 def marca_dagua_js():
