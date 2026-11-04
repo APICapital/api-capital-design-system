@@ -1124,9 +1124,10 @@ rosca sempre com furo. Fecha com fonte e data de apuração.
 - **Rótulo nunca atravessa a borda de uma barra**: ou fica inteiro fora, em `{colors.texto}`,
   ou inteiro dentro, em branco. Rótulo de linha que colidiria com o rótulo da barra desce para
   baixo do ponto.
-- **Marca d'água sempre.** Todo gráfico leva o logo extenso da API (`api_capital_logo03_azul.svg`)
-  no fundo, com 7% de opacidade, centrado na área dos dados, com metade da largura dela, atrás das
-  séries. Decisão de 4 de novembro de 2026, depois de um gráfico da API ser copiado e republicado
+- **Marca d'água sempre.** Todo gráfico leva o logo principal da API (`api_capital_logo01_azul.svg`)
+  no fundo, com 12% de opacidade, centrado na área dos dados na horizontal e na vertical, e grande:
+  ocupa 85% dela, na largura ou na altura, o que encostar primeiro. Fica atrás das séries. A
+  opacidade de 7% da primeira versão sumia em monitor de contraste baixo. Decisão de 4 de novembro de 2026, depois de um gráfico da API ser copiado e republicado
   sem permissão. **O tema do ECharts põe a marca sozinho** em todo gráfico iniciado com
   `'api-capital'`, e a repõe a cada atualização e redimensionamento: nenhuma ferramenta precisa
   lembrar dela, e nenhuma pode tirá-la. Gráfico feito fora do ECharts (planilha, imagem, outro

@@ -194,9 +194,9 @@ def resolver(dados, ref):
 
 # Marca d'água: todo gráfico do tema leva o logo da API no fundo (Leandro, 2026-11-04, depois de um
 # gráfico nosso ser copiado e republicado no LinkedIn sem permissão). DESIGN.md §Gráfico.
-MARCA_DAGUA_LOGO = AQUI.parent / "assets" / "logo" / "svg" / "api_capital_logo03_azul.svg"
-MARCA_DAGUA_OPACIDADE = 0.07
-MARCA_DAGUA_LARGURA = 0.5  # fração da largura da área dos dados
+MARCA_DAGUA_LOGO = AQUI.parent / "assets" / "logo" / "svg" / "api_capital_logo01_azul.svg"
+MARCA_DAGUA_OPACIDADE = 0.12  # 0.07 sumia em monitor de contraste baixo (Leandro, 04/11)
+MARCA_DAGUA_LARGURA = 0.85  # fração da área dos dados que o logo ocupa, na largura ou na altura
 
 
 def marca_dagua_js():
@@ -217,7 +217,7 @@ def marca_dagua_js():
   }}
   function marcaDagua(grafico) {{
     var a = areaDosDados(grafico);
-    var largura = Math.round(Math.min(a.width * {MARCA_DAGUA_LARGURA}, a.height * 0.6 * PROPORCAO));
+    var largura = Math.round(Math.min(a.width * {MARCA_DAGUA_LARGURA}, a.height * {MARCA_DAGUA_LARGURA} * PROPORCAO));
     var altura = Math.round(largura / PROPORCAO);
     return {{graphic: [{{id: 'marca-dagua-api-capital', type: 'image', silent: true, z: -100,
       left: Math.round(a.x + (a.width - largura) / 2), top: Math.round(a.y + (a.height - altura) / 2),
