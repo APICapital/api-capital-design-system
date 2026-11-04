@@ -1,5 +1,5 @@
 ---
-version: "3.8"
+version: "3.9"
 name: "API Capital"
 description: "Consultoria de investimentos independente. Clássico moderno e autoridade tranquila: azul-meia-noite e latão sobre branco puro, Playfair Display em título e Inter em todo o resto, incluindo cada número apresentado. Zero sombra, canto de 15, grade de 12 colunas. O sistema atende impresso e tela com a mesma régua, e o padrão é sempre o registro mais sóbrio."
 
@@ -400,7 +400,7 @@ zona: publica
 dominio: design
 bandeira: 06_marketing_api_capital
 produto: api_capital
-versao: 3.8
+versao: 3.9
 resumo: >-
   Especificação de design da API Capital, no formato design.md: tokens de cor, tipografia,
   espaço, forma e componente, mais as regras de layout, logo, ícone, imagem, estado e veto.
@@ -1112,9 +1112,11 @@ rosca sempre com furo. Fecha com fonte e data de apuração.
 
 **Moldura e rótulo:**
 
-- **Título como frase** que diz o que o gráfico mostra, em `{typography.titulo}` reduzido (20 px
-  numa peça de 600 px, crescendo com a peça); subtítulo com o que é medido, unidade e período;
-  **vão de 12 px entre os dois**.
+- **Título é o pedido, resumido.** Quem pediu "Selic nos últimos 5 anos" recebe o título "Taxa
+  Selic Meta - 5 anos". **Nunca uma conclusão tirada do dado** ("A Selic subiu a 15%..."): o que
+  o dado diz, quem pediu decide, e se quiser outro título pede para trocar. Em
+  `{typography.titulo}` reduzido (20 px numa peça de 600 px, crescendo com a peça); subtítulo com
+  a unidade e o período; **vão de 12 px entre os dois**.
 - **Legenda de séries centrada** sobre o gráfico, com respiro generoso até o topo da área de
   dados (56 px numa peça de 600 px).
 - **Rótulo de valor nunca tem contorno nem sombra.** Sobre fundo escuro (dentro de uma barra),

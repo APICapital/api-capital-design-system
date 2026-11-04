@@ -9,7 +9,7 @@ A API Capital é uma consultoria de investimentos independente. O visual traduz 
 sobriedade: azul-meia-noite e latão sobre branco, Playfair Display no título e Inter em todo o
 resto, zero sombra, canto de 15 px.
 
-**Versão desta skill: 5**
+**Versão desta skill: 6**
 
 **Esta skill não carrega o design system dentro dela.** Ela aponta para a fonte viva, e o material
 é lido a cada trabalho. O que está no repositório é o que vale, sempre.
@@ -72,6 +72,24 @@ Ela traz as fontes, as variáveis e as 23 classes de componente. A partir daí:
   se recolore, não se estica.
 - **Valor que não existe no `DESIGN.md` é erro.** Faltou um valor? Pergunte, não invente.
 
+### 2b · Gráfico: sempre pelo tema da API
+
+Todo gráfico, em qualquer peça (tela, PDF de cliente, slide), sai do motor ECharts com o tema
+oficial, carregado pelo endereço. **Não há outra ferramenta de gráfico.** O tema põe sozinho a
+marca d'água da API no fundo; gráfico desenhado de outro jeito sai sem ela, e gráfico sem a marca
+d'água é veto.
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.6.0/echarts.min.js"></script>
+<script src="https://design.apicapital.com.br/tokens/tema-echarts.js"></script>
+<script>var grafico = echarts.init(elemento, 'api-capital');</script>
+```
+
+- Para PDF, monte o gráfico em HTML com o tema e imprima esse HTML. Não troque de motor.
+- **Título é o pedido, resumido**: quem pediu "Selic nos últimos 5 anos" recebe "Taxa Selic
+  Meta - 5 anos". Nunca uma conclusão tirada do dado. Se a pessoa quiser outro título, ela pede.
+- 🔴 **Se o tema não carregar, PARE e avise.** Não entregue gráfico sem a marca d'água.
+
 ### 3 · Passe pelos vetos antes de entregar
 
 Confira a peça contra o `ANTI_SLOP_VISUAL.md`, veto por veto, **incluindo os vetos de texto**.
@@ -99,6 +117,7 @@ Versão lida: <o design_system do versao.json>
 Tokens: consumidos por <link> da folha oficial
 Ativos usados: <as URLs de logo, ícone, imagem>
 Vetos conferidos: <quantos> · Ocorrências corrigidas: <quais>
+Gráficos: <quantos> · Marca d'água: <sim em todos, ou não se aplica>
 ```
 
 Sem esse bloco, a peça não está pronta.
