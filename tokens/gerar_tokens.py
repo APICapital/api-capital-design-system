@@ -192,6 +192,59 @@ def resolver(dados, ref):
     return ref
 
 
+# Marca d'água: todo gráfico do tema leva o logo da API no fundo (Leandro, 2026-11-04, depois de um
+# gráfico nosso ser copiado e republicado no LinkedIn sem permissão). DESIGN.md §Gráfico.
+MARCA_DAGUA_LOGO = AQUI.parent / "assets" / "logo" / "svg" / "api_capital_logo03_azul.svg"
+MARCA_DAGUA_OPACIDADE = 0.07
+MARCA_DAGUA_LARGURA = 0.5  # fração da largura da área dos dados
+
+
+def marca_dagua_js():
+    """Envolve echarts.init: gráfico iniciado com o tema 'api-capital' recebe o logo no fundo, e o
+    recebe de novo a cada setOption e resize, então nenhuma ferramenta precisa lembrar de pôr."""
+    import base64, re
+    svg = MARCA_DAGUA_LOGO.read_text(encoding="utf-8")
+    _, _, w, h = (float(v) for v in re.search(r'viewBox="([^"]+)"', svg).group(1).split())
+    uri = "data:image/svg+xml;base64," + base64.b64encode(svg.encode("utf-8")).decode()
+    return f"""  var MARCA = {json.dumps(uri)}, PROPORCAO = {w / h:.4f};
+  function areaDosDados(grafico) {{
+    // centro da área dos dados (grid); sem grid (rosca, por exemplo), o gráfico inteiro
+    try {{
+      var r = grafico.getModel().getComponent('grid').coordinateSystem.getRect();
+      if (r && r.width > 0) return r;
+    }} catch (e) {{}}
+    return {{x: 0, y: 0, width: grafico.getWidth(), height: grafico.getHeight()}};
+  }}
+  function marcaDagua(grafico) {{
+    var a = areaDosDados(grafico);
+    var largura = Math.round(Math.min(a.width * {MARCA_DAGUA_LARGURA}, a.height * 0.6 * PROPORCAO));
+    var altura = Math.round(largura / PROPORCAO);
+    return {{graphic: [{{id: 'marca-dagua-api-capital', type: 'image', silent: true, z: -100,
+      left: Math.round(a.x + (a.width - largura) / 2), top: Math.round(a.y + (a.height - altura) / 2),
+      style: {{image: MARCA, width: largura, height: altura, opacity: {MARCA_DAGUA_OPACIDADE}}}}}]}};
+  }}
+  if (typeof echarts !== 'undefined' && !echarts.__marcaDaguaApi) {{
+    var iniciar = echarts.init;
+    echarts.init = function (el, nomeTema) {{
+      var grafico = iniciar.apply(this, arguments);
+      if (nomeTema !== 'api-capital') return grafico;
+      var aplicar = grafico.setOption, redimensionar = grafico.resize;
+      grafico.setOption = function () {{
+        var r = aplicar.apply(this, arguments);
+        aplicar.call(this, marcaDagua(this));
+        return r;
+      }};
+      grafico.resize = function () {{
+        var r = redimensionar.apply(this, arguments);
+        aplicar.call(this, marcaDagua(this));
+        return r;
+      }};
+      return grafico;
+    }};
+    echarts.__marcaDaguaApi = true;
+  }}"""
+
+
 def escrever_tema_echarts(dados, destino):
     """Emite tema-echarts.js: registra o tema 'api-capital' no ECharts a partir dos tokens.
     E JS, nao JSON, porque <script src> nao sofre a trava de origem cruzada do fetch.
@@ -263,6 +316,7 @@ def escrever_tema_echarts(dados, destino):
         "  var tema = " + json.dumps(tema, indent=2, ensure_ascii=False).replace("\n", "\n  ") + ";",
         "  if (typeof echarts !== 'undefined') echarts.registerTheme('api-capital', tema);",
         "  if (typeof window !== 'undefined') window.API_CAPITAL_TEMA_ECHARTS = tema;",
+        marca_dagua_js(),
         "})();",
         "",
     ]

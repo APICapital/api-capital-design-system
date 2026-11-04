@@ -1,5 +1,5 @@
 ---
-version: "3.7"
+version: "3.8"
 name: "API Capital"
 description: "Consultoria de investimentos independente. Clássico moderno e autoridade tranquila: azul-meia-noite e latão sobre branco puro, Playfair Display em título e Inter em todo o resto, incluindo cada número apresentado. Zero sombra, canto de 15, grade de 12 colunas. O sistema atende impresso e tela com a mesma régua, e o padrão é sempre o registro mais sóbrio."
 
@@ -400,7 +400,7 @@ zona: publica
 dominio: design
 bandeira: 06_marketing_api_capital
 produto: api_capital
-versao: 3.7
+versao: 3.8
 resumo: >-
   Especificação de design da API Capital, no formato design.md: tokens de cor, tipografia,
   espaço, forma e componente, mais as regras de layout, logo, ícone, imagem, estado e veto.
@@ -1122,6 +1122,13 @@ rosca sempre com furo. Fecha com fonte e data de apuração.
 - **Rótulo nunca atravessa a borda de uma barra**: ou fica inteiro fora, em `{colors.texto}`,
   ou inteiro dentro, em branco. Rótulo de linha que colidiria com o rótulo da barra desce para
   baixo do ponto.
+- **Marca d'água sempre.** Todo gráfico leva o logo extenso da API (`api_capital_logo03_azul.svg`)
+  no fundo, com 7% de opacidade, centrado na área dos dados, com metade da largura dela, atrás das
+  séries. Decisão de 4 de novembro de 2026, depois de um gráfico da API ser copiado e republicado
+  sem permissão. **O tema do ECharts põe a marca sozinho** em todo gráfico iniciado com
+  `'api-capital'`, e a repõe a cada atualização e redimensionamento: nenhuma ferramenta precisa
+  lembrar dela, e nenhuma pode tirá-la. Gráfico feito fora do ECharts (planilha, imagem, outro
+  motor) leva a mesma marca, nas mesmas medidas, posta à mão.
 - **Animação desligada** em peça exportada.
 - O tema do motor de gráficos (Apache ECharts) é `tokens/tema-echarts.js`, gerado deste
   arquivo; toda ferramenta que desenha gráfico carrega o tema pelo endereço, sem copiar valor.
@@ -1162,6 +1169,7 @@ horizontal dentro do próprio bloco. A barra de topo mantém 64 px em qualquer l
 - Rótulo do tipo `01 / BLOCO 03`
 - Linha de fonte pequena e cinza com informação que deveria estar no texto
 - Eixo de gráfico cortado, gráfico sem escala, minigráfico decorativo
+- Gráfico sem a marca d'água da API
 - Percentual escrito sobre a fatia da rosca
 - Fio entre linhas de tabela
 - Mais de uma caixa quente por página
