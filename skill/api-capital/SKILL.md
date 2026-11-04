@@ -9,7 +9,7 @@ A API Capital é uma consultoria de investimentos independente. O visual traduz 
 sobriedade: azul-meia-noite e latão sobre branco, Playfair Display no título e Inter em todo o
 resto, zero sombra, canto de 15 px.
 
-**Versão desta skill: 4**
+**Versão desta skill: 5**
 
 **Esta skill não carrega o design system dentro dela.** Ela aponta para a fonte viva, e o material
 é lido a cada trabalho. O que está no repositório é o que vale, sempre.
@@ -19,7 +19,7 @@ resto, zero sombra, canto de 15 px.
 Leia os arquivos direto do repositório. Use o primeiro que responder:
 
 ```
-BASE = https://raw.githubusercontent.com/lebeninca/api-capital-design-system/main  (oficial)
+BASE = https://raw.githubusercontent.com/APICapital/api-capital-design-system/main  (oficial)
 BASE = https://design.apicapital.com.br                                           (reserva)
 ```
 
@@ -59,7 +59,7 @@ régua é pior que peça nenhuma, porque parece certa.
 Em peça de tela (HTML), o `<head>` começa sempre com a folha oficial:
 
 ```html
-<link rel="stylesheet" href="https://lebeninca.github.io/api-capital-design-system/tokens/api-capital.css">
+<link rel="stylesheet" href="https://design.apicapital.com.br/tokens/api-capital.css">
 ```
 
 Ela traz as fontes, as variáveis e as 23 classes de componente. A partir daí:

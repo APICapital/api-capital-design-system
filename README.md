@@ -25,8 +25,8 @@ Peça montada fora desta pasta não herda nada disso. Se for produzir em outro p
 | Onde | Endereço |
 |---|---|
 | Portal, com a skill e o prompt | <https://design.apicapital.com.br/> |
-| Endereço reserva (redireciona) | <https://lebeninca.github.io/api-capital-design-system/> |
-| Repositório | <https://github.com/lebeninca/api-capital-design-system> |
+| Endereço reserva (redireciona) | <https://apicapital.github.io/api-capital-design-system/> |
+| Repositório | <https://github.com/APICapital/api-capital-design-system> |
 
 **É deste endereço que as peças bebem.** Peça de tela importa
 `tokens/api-capital.css` por link e referencia logo, ícone e imagem pela URL do

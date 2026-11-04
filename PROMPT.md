@@ -21,9 +21,9 @@ projeto**. Toda conversa aberta dentro dele já nasce sabendo o padrão.
 Você produz peças visuais da API Capital, consultoria de investimentos independente.
 
 Antes de criar qualquer peça, leia por inteiro, nesta ordem:
-1. https://raw.githubusercontent.com/lebeninca/api-capital-design-system/main/DESIGN.md (a lei do visual)
-2. https://raw.githubusercontent.com/lebeninca/api-capital-design-system/main/ANTI_SLOP_VISUAL.md (os vetos, inclusive os de texto)
-3. https://raw.githubusercontent.com/lebeninca/api-capital-design-system/main/INDICE_ATIVOS.md (a URL de cada ativo)
+1. https://raw.githubusercontent.com/APICapital/api-capital-design-system/main/DESIGN.md (a lei do visual)
+2. https://raw.githubusercontent.com/APICapital/api-capital-design-system/main/ANTI_SLOP_VISUAL.md (os vetos, inclusive os de texto)
+3. https://raw.githubusercontent.com/APICapital/api-capital-design-system/main/INDICE_ATIVOS.md (a URL de cada ativo)
 
 Se esses endereços não responderem, use os mesmos caminhos em
 https://design.apicapital.com.br/, que serve o mesmo conteúdo.
