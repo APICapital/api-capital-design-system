@@ -263,7 +263,11 @@ function montar(lista) {
       grupos.set(chave, {cat, sub: a.sub, base: familia ? a.sub : a.base, nome,
         grupo: curado ? curado.itens[a.base][0] : null, formatos: []});
     }
-    if (a.rotulo === 'PNG 1x' || a.rotulo === 'PNG 2x') continue;
+    if (a.rotulo === 'PNG 1x' || a.rotulo === 'PNG 2x') {
+      // reserva: ativo que só existe em 1x/2x (os marcadores da assinatura) não pode sumir nem derrubar a lista
+      grupos.get(chave).reserva = {rotulo: 'PNG', url: a.url, ext: a.ext};
+      continue;
+    }
     const rotulo = familia
       ? a.base.replace(/^(Inter|PlayfairDisplay)-?/, '').replace(/[-_]/g, ' ').trim()
           .replace(/^$/, 'Variável') + ' · ' + a.ext.toUpperCase()
@@ -273,6 +277,12 @@ function montar(lista) {
   const noPelicano = new Set([...grupos.values()].filter(g => g.cat === 'pelicano').map(g => g.base));
   for (const [chave, g] of grupos) {
     if (g.cat === 'logo' && noPelicano.has(g.base)) grupos.delete(chave);
+  }
+  for (const g of grupos.values()) {
+    if (!g.formatos.length && g.reserva) g.formatos.push(g.reserva);
+  }
+  for (const [chave, g] of grupos) {
+    if (!g.formatos.length) grupos.delete(chave);
   }
   for (const g of grupos.values()) {
     if (g.cat === 'fonte') g.formatos.sort((x, y) => x.rotulo.localeCompare(y.rotulo, 'pt-BR'));
