@@ -46,8 +46,8 @@ Busque, nesta ordem:
 de produzir**, nestas palavras (troque ATUAL pela versão escrita no topo desta skill e N pela do
 `skill.json`): *"A skill da API Capital que você tem instalada é a versão ATUAL, e já existe a
 versão N. Baixe a nova em https://design.apicapital.com.br/como-utilizar/usando-claude/, apague a
-antiga em Configurações → Personalizar → Habilidades e suba a nova em Adicionar → Fazer upload de
-habilidade."* Depois de avisar, siga o trabalho normalmente: o material que você acabou de ler é o
+antiga em Plugins → aba Skills (menu de três pontos ao lado dela) e suba a nova em Adicionar →
+Fazer upload de plugin."* Depois de avisar, siga o trabalho normalmente: o material que você acabou de ler é o
 atual de qualquer jeito.
 
 🔴 **Se qualquer uma dessas buscas falhar, PARE.** Diga à pessoa que não conseguiu alcançar o

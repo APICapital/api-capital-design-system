@@ -49,15 +49,16 @@
     <div class="passo">
       <h3><span class="api-numero-passo">1.</span> Libere o acesso do Claude à internet</h3>
       <p>A skill busca o design system na internet a cada pedido. No Claude, abra
-        <strong>Configurações → Recursos</strong> e, em <strong>Execução de código e criação de
-        arquivos</strong>, deixe ligadas as chaves <strong>Execução de código na nuvem e criação de
-        arquivos</strong> e <strong>Permitir acesso de rede externo</strong>.</p>
-      <p>Em <strong>Lista de domínios permitidos</strong>, deixe <strong>Só gerenciadores de
-        pacotes</strong>. Em <strong>Domínios adicionais permitidos</strong>, clique em
-        <strong>Adicionar</strong> e inclua um por vez: <code>raw.githubusercontent.com</code> e
-        <code>design.apicapital.com.br</code>.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo0_acesso_rede.png"
-           alt="Configurações, Recursos: execução de código e acesso de rede ligados, com a lista de domínios">
+        <strong>Configurações → Recursos</strong> e deixe ligadas as chaves <strong>Criar e editar
+        arquivos</strong> e, logo abaixo, <strong>Usar a internet ao criar arquivos</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo1_recursos.png"
+           alt="Configurações, Recursos: Criar e editar arquivos e Usar a internet ao criar arquivos ligados">
+      <p>Em <strong>Sites permitidos</strong>, clique em <strong>Gerenciar</strong>. Deixe
+        <strong>Somente sites de download padrão</strong> e, em <strong>Adicionar um site</strong>,
+        inclua um por vez, clicando em <strong>Adicionar</strong> a cada um:
+        <code>raw.githubusercontent.com</code> e <code>design.apicapital.com.br</code>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo1b_sites_permitidos.png"
+           alt="Tela Sites permitidos, com o campo Adicionar um site">
       <p class="anota">Sem isso, o Claude responde que não consegue alcançar o design system, ou
         fala em erro 403 de política de rede.</p>
     </div>
@@ -72,37 +73,36 @@
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">3.</span> Abra Personalizar</h3>
-      <p>No Claude, clique em <strong>Personalizar</strong> na barra lateral e fique na aba
-        <strong>Habilidades</strong>.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo1_personalizar.png"
-           alt="Tela Personalizar do Claude, com a aba Habilidades aberta">
+      <h3><span class="api-numero-passo">3.</span> Abra Plugins, aba Skills</h3>
+      <p>No Claude, clique em <strong>Plugins</strong> na barra lateral e escolha a aba
+        <strong>Skills</strong>, no alto.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo2_plugins_skills.png"
+           alt="Página Plugins do Claude, com a aba Skills selecionada">
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">4.</span> Adicionar, Fazer upload de habilidade</h3>
+      <h3><span class="api-numero-passo">4.</span> Adicionar, Fazer upload de plugin</h3>
       <p>Clique em <strong>Adicionar</strong>, no canto superior direito, e escolha
-        <strong>Fazer upload de habilidade</strong>.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo2_adicionar.png"
-           alt="Menu Adicionar aberto, com a opção Fazer upload de habilidade">
+        <strong>Fazer upload de plugin</strong>. Skill entra por esse mesmo caminho.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo3_adicionar.png"
+           alt="Menu Adicionar aberto, com a opção Fazer upload de plugin">
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">5.</span> Suba o arquivo e salve</h3>
-      <p>Arraste o arquivo baixado para a caixa, ou clique nela para escolher. Vale
-        <code>.zip</code>, <code>.skill</code> ou o <code>SKILL.md</code>. A prévia mostra
-        <strong>api-capital</strong>. Clique em <strong>Salvar</strong>.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo3_upload.png"
-           alt="Tela Fazer upload de habilidade com o arquivo da skill e a prévia">
+      <h3><span class="api-numero-passo">5.</span> Suba o arquivo</h3>
+      <p>Na tela <strong>Enviar um plugin</strong>, arraste o arquivo baixado para a caixa, ou
+        clique nela para escolher. Vale <code>.zip</code>, <code>.skill</code> ou o
+        <code>SKILL.md</code>. Clique em <strong>Fazer upload</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo4_enviar.png"
+           alt="Tela Enviar um plugin, com a caixa para arrastar o arquivo">
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">6.</span> Confira se está ligada</h3>
-      <p>A skill <strong>api-capital</strong> aparece com a chave ligada, em azul. Pronto.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_chat_passo4_instalada.png"
-           alt="Skill api-capital instalada, com a chave ligada">
-      <p class="anota">Já tinha uma versão instalada? Apague a antiga pelo menu de três pontos
-        antes de subir a nova.</p>
+      <h3><span class="api-numero-passo">6.</span> Confira em Seus plugins</h3>
+      <p>De volta à aba <strong>Skills</strong>, a skill aparece em <strong>Seus plugins</strong>
+        como <strong>Api capital</strong> · Skill · Por você (como na imagem do passo 3). Pronto.</p>
+      <p class="anota">Já tinha uma versão instalada? Apague a antiga pelo menu de três pontos, à
+        direita dela, antes de subir a nova.</p>
     </div>
 
     <h2>No dia a dia</h2>

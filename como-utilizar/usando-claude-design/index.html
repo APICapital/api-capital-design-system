@@ -41,132 +41,105 @@
     </div>
 
     <div class="api-aviso-ok" style="max-width:72ch;margin-bottom:24px;">
-      <p style="margin:0;"><strong>Você precisa de uma conta no GitHub (gratuita) para usar o nosso
-        design system com o Claude Design.</strong> Crie em
-        <a href="https://github.com/signup">github.com/signup</a> antes de começar.</p>
+      <p style="margin:0;"><strong>Atenção: o Claude Design separado (claude.ai/design) fecha em
+        14 de dezembro de 2026.</strong> Daí em diante, ele mora dentro do próprio Claude, no item
+        <strong>Design</strong> da barra lateral. Este tutorial já usa esse caminho novo: funciona
+        hoje e continua funcionando depois do dia 14.</p>
     </div>
 
-    <p>O Claude Design está em <a href="https://claude.ai/design">claude.ai/design</a> e na barra
-      lateral do app do Claude. As telas dele estão em inglês; os nomes dos botões aparecem aqui
-      como estão na tela. Não tem Claude Design ou ficou sem limite de uso? Use o caminho
+    <p>Montou o design system da API pelo caminho antigo, em claude.ai/design? Refaça por aqui. Os
+      projetos que você criou lá podem ser trazidos pelo botão <strong>Mover</strong>, no aviso do
+      alto da página Design, até o dia 14; as conversas e os comentários do site antigo não vêm
+      junto e são apagados quando ele fechar.</p>
+    <p>Não tem o Design no seu Claude ou ficou sem limite de uso? Use o caminho
       <a href="/como-utilizar/usando-claude/">Usando Claude</a>.</p>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">1.</span> Set up a design system</h3>
-      <p>Abra <a href="https://claude.ai/design">claude.ai/design</a> e clique no selo
-        <strong>Set up a design system</strong>, no canto inferior direito. Ou abra a aba
-        <strong>Design systems</strong>.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo1_inicio.png"
-           alt="Tela inicial do Claude Design com o selo Set up a design system">
+      <h3><span class="api-numero-passo">1.</span> Design, Sistema de design</h3>
+      <p>No Claude, clique em <strong>Design</strong> na barra lateral. Em <strong>Crie algo
+        novo</strong>, clique em <strong>Sistema de design</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_v2_passo1_design.png"
+           alt="Página Design do Claude, com o cartão Sistema de design em Crie algo novo">
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">2.</span> Create here</h3>
-      <p>Escolha <strong>Create here</strong>.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo2_create_here.png"
-           alt="Janela Add a design system com a opção Create here">
+      <h3><span class="api-numero-passo">2.</span> Sincronizar do GitHub</h3>
+      <p>O Claude pergunta em que o sistema de design deve se basear. Escolha
+        <strong>Sincronizar do GitHub</strong>.</p>
+      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_v2_passo2_github.png"
+           alt="Opções Sincronizar do GitHub, Criar a partir de conectores e Fazer upload de arquivos da marca">
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">3.</span> Preencha o formulário</h3>
-      <p>No campo <strong>Company name and blurb</strong>, cole:</p>
-      <div class="copiar">API Capital: consultoria de investimentos independente. Peças para clientes e para o mercado: propostas comerciais, apresentações, relatórios de carteira, cartas e posts.</div>
-      <p>Em <strong>Link code from GitHub</strong>, cole o endereço abaixo e clique em
-        <strong>Add</strong>. Os outros campos ficam vazios: tudo já está no repositório.</p>
+      <h3><span class="api-numero-passo">3.</span> Escolha o repositório da API</h3>
+      <p>Se o Claude pedir permissão para listar os seus repositórios, clique em
+        <strong>Permitir uma vez</strong>. Na lista, escolha
+        <strong>APICapital/api-capital-design-system</strong>.</p>
+      <p>Não aparece na lista, ou o seu Claude não tem o GitHub conectado? Clique em
+        <strong>Outra coisa</strong> e cole o endereço abaixo. O repositório é público, e o Claude
+        consegue ler mesmo sem conta no GitHub.</p>
       <div class="copiar">https://github.com/APICapital/api-capital-design-system</div>
-      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo3_formulario.png"
-           alt="Formulário Set up your design system preenchido, com o repositório adicionado">
+      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_v2_passo3_repositorio.png"
+           alt="Pergunta sobre qual repositório sincronizar, com APICapital/api-capital-design-system">
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">4.</span> Continue to generation e Connect GitHub</h3>
-      <p>Clique em <strong>Continue to generation</strong>, no topo. Na janela que abre, clique em
-        <strong>Connect GitHub</strong>. Sem essa conexão, o Claude Design não lê o repositório.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo4_connect_github.png"
-           alt="Janela Connect GitHub to continue">
+      <h3><span class="api-numero-passo">4.</span> Marque tudo e envie</h3>
+      <p>Na pergunta sobre o que trazer do repositório, marque as quatro opções:
+        <strong>Color &amp; type tokens</strong>, <strong>Spacing &amp; radii</strong>,
+        <strong>Fonts &amp; logos</strong> e <strong>Components</strong>. Clique na seta para
+        enviar. Se o Claude pedir para adicionar o repositório à sessão, clique em
+        <strong>Permitir uma vez</strong>.</p>
+      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_v2_passo4_o_que_trazer.png"
+           alt="Quatro opções marcadas: cores e tipografia, espaçamentos, fontes e logos, componentes">
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">5.</span> Autorize no GitHub</h3>
-      <p>Abre uma janela do GitHub. Entre na sua conta, se pedir, e clique em
-        <strong>Authorize</strong>.</p>
-      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_passo5_github_authorize.png"
-           alt="Tela do GitHub Authorize Claude Design Import">
+      <h3><span class="api-numero-passo">5.</span> Espere a montagem</h3>
+      <p>O Claude lê o repositório e monta o design system. Leva vários minutos. Deixe a aba
+        aberta e volte depois.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_v2_passo5_gerando.png"
+           alt="Claude montando o design system a partir do repositório">
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">6.</span> Install &amp; Authorize</h3>
-      <p>Na tela seguinte, deixe como está e clique em <strong>Install &amp; Authorize</strong>.
-        A permissão é só de leitura.</p>
-      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_passo6_github_install.png"
-           alt="Tela do GitHub Install and Authorize Claude Design Import">
+      <h3><span class="api-numero-passo">6.</span> Pronto</h3>
+      <p>Quando termina, o design system <strong>API Capital</strong> abre ao lado da conversa,
+        com a marca, as cores, as regras e os componentes lidos do repositório. No fim da conversa,
+        o Claude lista o que trouxe e o que deixou de fora de propósito.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_v2_passo6_pronto.png"
+           alt="Design system API Capital montado, com a capa da marca">
     </div>
 
     <div class="passo">
-      <h3><span class="api-numero-passo">7.</span> Confirme por e-mail, se pedir</h3>
-      <p>O GitHub pode pedir confirmação. Clique em <strong>Verify via email</strong> e use o
-        código que chega no seu e-mail.</p>
-      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_passo7_github_confirmar.png"
-           alt="Tela Confirm access do GitHub">
-    </div>
-
-    <div class="passo">
-      <h3><span class="api-numero-passo">8.</span> Feche a janela do GitHub</h3>
-      <p>Quando aparecer <strong>GitHub successfully linked</strong>, feche essa janela e volte ao
-        Claude Design.</p>
-      <img class="print retrato" loading="lazy" src="img/tutorial_claude_design_passo8_github_conectado.png"
-           alt="Mensagem GitHub successfully linked">
-    </div>
-
-    <div class="passo">
-      <h3><span class="api-numero-passo">9.</span> Attach your codebase</h3>
-      <p>O Claude Design mostra a lista de repositórios. Se
-        <strong>APICapital/api-capital-design-system</strong> aparecer, marque e clique em
-        <strong>Continue</strong>. Se a lista vier vazia ou sem ele, clique em
-        <strong>Skip</strong>: o endereço colado no passo 3 já basta.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo9_escolher_repositorio.png"
-           alt="Janela For best results, attach your codebase">
-    </div>
-
-    <div class="passo">
-      <h3><span class="api-numero-passo">10.</span> Responda as perguntas</h3>
-      <p>Marque as peças que você mais usa e escolha <strong>Português (BR)</strong>. Clique em
-        <strong>Send answer</strong>.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo10_perguntas.png"
-           alt="Perguntas sobre peças prioritárias e idioma">
-    </div>
-
-    <div class="passo">
-      <h3><span class="api-numero-passo">11.</span> Espere a geração</h3>
-      <p>A montagem pode passar de 15 minutos. Deixe a aba aberta e volte depois.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo11_gerando.png"
-           alt="Tela Creating your design system">
-    </div>
-
-    <div class="passo">
-      <h3><span class="api-numero-passo">12.</span> Pronto</h3>
-      <p>Aparece o <strong>API Capital Design System</strong>, com modelos, marca, cores e
-        componentes. Confira se <strong>Published</strong> está marcado: é o que faz todo projeto
-        novo usar a marca.</p>
-      <img class="print" loading="lazy" src="img/tutorial_claude_design_passo12_pronto.png"
-           alt="API Capital Design System gerado, com a opção Published marcada">
+      <h3><span class="api-numero-passo">7.</span> Defina como padrão</h3>
+      <p>Para todo projeto novo já nascer com a marca, abra <strong>Configurações → Recursos</strong>
+        e, em <strong>Design systems</strong>, clique em <strong>Gerenciar</strong>. No menu de três
+        pontos ao lado de <strong>API Capital</strong>, escolha <strong>Definir como seu
+        padrão</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_v2_passo7_definir_padrao.png"
+           alt="Lista de design systems, com o menu aberto em Definir como seu padrão">
+      <p>Ao lado do nome aparece <strong>Seu padrão</strong>.</p>
+      <img class="print" loading="lazy" src="img/tutorial_claude_design_v2_passo7b_seu_padrao.png"
+           alt="API Capital marcado como Seu padrão">
+      <p class="anota">Montou mais de uma vez e sobrou um design system chamado só
+        <strong>Design System</strong>, vazio? Apague pelo mesmo menu.</p>
     </div>
 
     <h2>No dia a dia</h2>
-    <p>Na tela inicial do Claude Design, o seletor <strong>Design system</strong>, ao lado da caixa
-      de pedido, mostra <strong>API Capital Design System</strong>, e os modelos da API aparecem
-      logo abaixo. Escolha um modelo ou peça em português:
-      <em>“faz um post para o Instagram com a evolução do IPCA nos últimos 5 anos”</em>.</p>
-    <img class="print" loading="lazy" src="img/tutorial_claude_design_dia_a_dia_seletor.png"
-         alt="Tela inicial do Claude Design com o API Capital Design System selecionado">
-    <p class="anota">O design system gerado pelo Claude Design é uma leitura do repositório. Se algo
+    <p>Na página <strong>Design</strong>, em <strong>Crie algo novo</strong>, comece uma
+      <strong>Apresentação</strong> ou um <strong>Design</strong> e peça em português:
+      <em>“faz um post para o Instagram com a evolução do IPCA nos últimos 5 anos”</em>. Com o
+      API Capital como padrão, a peça já sai com a marca.</p>
+    <p class="anota">O design system montado pelo Claude é uma leitura do repositório. Se algo
       sair fora da marca, a régua que vale é a deste site.</p>
 
     <h2>Quando sair versão nova</h2>
-    <p>Diferente da skill do chat, o Claude Design guarda uma cópia do design system. Quando
-      aparecer versão nova em <a href="/atualizacoes/">O que há de novo?</a>, abra o design system
-      da API Capital na aba <strong>Design systems</strong>, clique em <strong>Remix</strong> e peça:
-      <em>“atualize a partir do repositório”</em>.</p>
+    <p>Diferente da skill do chat, o Design guarda uma cópia do design system. Quando aparecer
+      versão nova em <a href="/atualizacoes/">O que há de novo?</a>, abra a conversa em que você
+      montou o design system (ou o próprio API Capital, em <strong>Configurações → Recursos →
+      Design systems</strong>) e peça: <em>“sincronize de novo a partir do repositório”</em>. O
+      Claude atualiza só o que mudou.</p>
   </main>
 </div>
 

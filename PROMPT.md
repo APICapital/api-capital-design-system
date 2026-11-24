@@ -5,9 +5,9 @@ Dois caminhos levam ao mesmo lugar. O **primeiro** é melhor: instala uma vez e 
 ## Caminho 1 · A skill (recomendado)
 
 1. Baixe: <https://design.apicapital.com.br/skill/api-capital-claude-skill.zip>
-2. No Claude, abra **Configurações → Personalizar → Habilidades**, clique em **Adicionar → Fazer
-   upload de habilidade** e suba o arquivo `.zip` ou `.skill` que foi baixado.
-   (Se a opção não aparecer, ligue **execução de código** nas configurações.)
+2. No Claude, abra **Plugins** na barra lateral, aba **Skills**, clique em **Adicionar → Fazer
+   upload de plugin** e suba o arquivo `.zip` ou `.skill` que foi baixado.
+   (Se não funcionar, ligue **Criar e editar arquivos** em **Configurações → Recursos**.)
    Se você já tinha uma versão instalada, **apague a antiga antes de subir a nova**: o Claude não
    documenta o que faz com duas de mesmo nome, e duas skills iguais podem se atrapalhar.
 3. Pronto. Em qualquer conversa, peça: *"faz uma proposta comercial com a cara da API Capital"*.
