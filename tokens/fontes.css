@@ -6,7 +6,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../assets/fonte/playfair-display/PlayfairDisplay-Regular-latino.woff2") format("woff2"),
+  src: url("../assets/fonte/playfair-display/PlayfairDisplay-Regular-latino.woff2?v=2") format("woff2"),
        url("../assets/fonte/playfair-display/PlayfairDisplay-Regular.otf") format("opentype");
 }
 
@@ -21,7 +21,7 @@
 @font-face {
   font-family: "Playfair Display";
   font-weight: 500;
-  src: url("../assets/fonte/playfair-display/PlayfairDisplay-Medium-latino.woff2") format("woff2");
+  src: url("../assets/fonte/playfair-display/PlayfairDisplay-Medium-latino.woff2?v=2") format("woff2");
   font-display: swap;
 }
 @font-face {

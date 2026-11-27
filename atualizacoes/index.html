@@ -54,6 +54,21 @@
     <h2>Histórico de versões</h2>
 
     <div class="versao">
+      <div class="cabeca"><span class="num">v1.20</span><span class="data">27 de novembro de 2026</span></div>
+      <h3>Correção: Playfair Display Medium estava incompleta</h3>
+      <ul>
+        <li>O arquivo <code>PlayfairDisplay-Medium-latino.woff2</code> trazia só 190 caracteres e não
+          tinha as letras de B a Z, os acentos do português nem os números. Todo texto em Playfair
+          peso 500 (título de documento, título de seção, capa de peça editorial) caía numa fonte
+          genérica. Achado pelo Claude do Cleber.</li>
+        <li>O arquivo foi refeito a partir da fonte oficial da Playfair Display (Google Fonts) e tem
+          agora o alfabeto latino completo, com acentos, números e símbolos.</li>
+        <li>O <code>PlayfairDisplay-Regular-latino.woff2</code> ganhou o símbolo do euro, que faltava.</li>
+        <li>Os outros pesos da Playfair e a Inter foram conferidos letra por letra: estavam completos.</li>
+      </ul>
+    </div>
+
+    <div class="versao">
       <div class="cabeca"><span class="num">v1.19</span><span class="data">24 de novembro de 2026</span></div>
       <h3>Tutoriais refeitos para o Claude novo</h3>
       <ul>
